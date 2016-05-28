@@ -1,0 +1,1 @@
+!function(){$(".more-container").mouseenter(function(){$(".more-select").show()}),$(".more-select").mouseleave(function(){$(this).hide()}),$(window).scroll(function(){$(window).scrollTop()>0?$(".to-top").show():$(".to-top").hide()}),$(".to-top").on("click",function(){$("html,body").animate({scrollTop:"0px"},800)})}();

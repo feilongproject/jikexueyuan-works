@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度首页模仿</title>
+    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/style_29750ce.css" />
+</head>
+
+<body>
+    <div id="container">
+        <!-- 登录界面 -->
+        <div class="login-box">
+            <div class="login-background"></div>
+            <div class="login">
+                <div class="login-title">
+                    <span>登录百度帐号</span>
+                    <i id="login-close"></i>
+                </div>
+                <div class="login-body">
+                    <div class="login-body-top">
+                        <p id="info-error"></p>
+                        <p class="mail-login">短信快捷登录</p>
+                    </div>
+                    <input type="text" id="user" placeholder="手机/邮箱/用户名" />
+                    <span class="user-cancel"></span>
+                    <input type="password" id="password" placeholder="密码" />
+                    <p>
+                        <input type="checkbox" id="auto-login" />
+                        <label for="auto-login">下次自动登录</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="登录" id="login-btn" />
+                        <a class="login-problem" href="https://passport.baidu.com/?getpassindex&amp;tt=1459171212131&amp;gid=F54B586-80E4-416B-A7B8-5DEBD5DB6DA9&amp;tpl=mn&amp;u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank">登录遇到问题</a>
+                        <a class="registered" href="https://passport.baidu.com/v2/?reg&amp;tt=1459171212131&amp;gid=F54B586-80E4-416B-A7B8-5DEBD5DB6DA9&amp;tpl=mn&amp;u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank">立即注册</a>
+                    </p>
+                </div>
+                <div class="login-footer">
+                    <p>可以使用以下方式登录</p>
+                    <span>微博</span>&nbsp;<span>QQ</span>
+                </div>
+            </div>
+        </div>
+        <!-- 登出界面 -->
+        <div class="logout-box">
+            <div class="logout-background"></div>
+            <div class="logout">
+                <div class="logout-title">
+                    <span>真的要离开吗？</span>
+                    <i class="logout-close"></i>
+                </div>
+                <div class="logout-body">
+                    <p>离开后就没有丰富实用的卡片和高端大气的皮肤了哦！</p>
+                    <div class="button-wrap">
+                        <a class="switch-accunt">切换帐号</a>
+                        <input type="button" value="确定" id="logout-confirm" />
+                        <input type="button" value="取消" id="logout-close" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PC顶部的导航 -->
+        <div class="top-box">
+            <!-- PC登陆后左上的信息 -->
+            <div class="top-left">
+                <div class="weather-wrap">
+                    <p id="weather-info"></p>
+                    <i class="s-line"></i>
+                </div>
+                <div class="top-menu">
+                    <span>宝箱</span>
+                    <span id="skin">换肤</span>
+                    <span>消息</span>
+                    <span id="channel-show">显示频道</span>
+                </div>
+                <div class="weather-forecast">
+                    <div class="title">
+                        <span id="today-date"></span>
+                        <span class="area-setting">设置</span>
+                    </div>
+                    <div class="weather-body">
+                        <div class="next1">
+                            <p id="today">今天</p>
+                            <p id="temperture0"></p>
+                            <p id="type0"></p>
+                            <p id="wind-level0"></p>
+                        </div>
+                        <div class="next2">
+                            <p id="tomorrow">明天</p>
+                            <p id="temperture1"></p>
+                            <p id="type1"></p>
+                            <p id="wind-level1"></p>
+                        </div>
+                        <div class="next3">
+                            <p id="twoDays-later">后天</p>
+                            <p id="temperture2"></p>
+                            <p id="type2"></p>
+                            <p id="wind-level2"></p>
+                        </div>
+                        <div class="next4">
+                            <p id="threeDays-later"></p>
+                            <p id="temperture3"></p>
+                            <p id="type3"></p>
+                            <p id="wind-level3"></p>
+                        </div>
+                        <div class="next5">
+                            <p id="fourDays-later"></p>
+                            <p id="temperture4"></p>
+                            <p id="type4"></p>
+                            <p id="wind-level4"></p>
+                        </div>
+                    </div>
+                    <div class="weather-setting">
+                        <p>请选择你所在的地区:</p>
+                        <p>
+                            <select id="area-setting">
+                                <option value="" id='mycity'>本地</option>
+                                <option value="广州">广州</option>
+                                <option value="上海">上海</option>
+                                <option value="北京">北京</option>
+                                <option value='深圳'>深圳</option>
+                                <option value='香港'>香港</option>
+                            </select>
+                        </p>
+                        <input type="button" value="保存" id="weather-save" />
+                        <input type="button" value="取消" id="weather-cancel" />
+                    </div>
+                </div>
+                <div class="colorpick" id="colorpick">
+                    <input id="color" type="color" value="#D9D5D5" />
+                    <input id="color-submit" type="submit" value="确认" />
+                    <input id="color-cancel" type="submit" value="取消" />
+                </div>
+            </div>
+            <!-- <div class="change-skin"></div> -->
+            <!-- PC右上的导航 -->
+            <div class="top-right">
+                <ul>
+                    <li class="top-nav"><a href="http://www.nuomi.com/?cid=002540"><b>糯米</b></a></li>
+                    <li class="top-nav"><a href="http://news.baidu.com/"><b>新闻</b></a></li>
+                    <li class="top-nav"><a href="http://www.hao123.com/"><b>hao123</b></a></li>
+                    <li class="top-nav"><a href="http://map.baidu.com/"><b>地图</b></a></li>
+                    <li class="top-nav"><a href="http://v.baidu.com/"><b>视频</b></a></li>
+                    <li class="top-nav"><a href="http://tieba.baidu.com/"><b>贴吧</b></a></li>
+                    <li class="top-nav" id="login"><a>登录</a></li>
+                    <li class="top-nav user">
+                        <div class="user-container">
+                            <a href="http://www.baidu.com/gaoji/preferences.html">admin</a>
+                            <div class="user-box">
+                                <!-- 画一个小箭嘴 -->
+                                <div class="arrow">
+                                    <em></em>
+                                    <i></i>
+                                </div>
+                                <div class="user-content">
+                                    <ul>
+                                        <li class="setpref"><a href="javascript:;">我的VIP</a></li>
+                                        <li><a href="//www.baidu.com/gaoji/advanced.html" target="_blank">个人中心</a></li>
+                                        <li><a href="javascript:;">账号设置</a></li>
+                                        <li><a href="javascript:;">意见反馈</a></li>
+                                        <li><a id="logout">退出</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-nav setting">
+                        <div class="setting-container">
+                            <a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+                            <div class="setting-box">
+                                <!-- 画一个小箭嘴 -->
+                                <div class="arrow">
+                                    <em></em>
+                                    <i></i>
+                                </div>
+                                <div class="setting-content">
+                                    <ul>
+                                        <li class="setpref"><a href="javascript:;">搜索设置</a></li>
+                                        <li><a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a></li>
+                                        <li><a href="javascript:;">关闭预测</a></li>
+                                        <li><a href="javascript:;">搜索历史</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-nav more">
+                        <div class="more-container">
+                            <a>更多产品</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more-select">
+                    <ul>
+                        <li class="unchangable">更多产品</li>
+                        <li>
+                            <div class="music"></div>
+                            <a href="http://music.baidu.com">音乐</a>
+                        </li>
+                        <li>
+                            <div class="image"></div>
+                            <a href="http://image.baidu.com">图片</a>
+                        </li>
+                        <li>
+                            <div class="zhidao"></div>
+                            <a href="http://zhidao.baidu.com">知道</a>
+                        </li>
+                        <li>
+                            <div class="wenku"></div>
+                            <a href="http://wenku.baidu.com">文库</a>
+                        </li>
+                        <li>
+                            <div class="bang"></div>
+                            <a href="http://top.baidu.com">风云榜</a>
+                        </li>
+                        <li>
+                            <div class="tuiguang"></div>
+                            <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                        </li>
+                        <li class="all">
+                            <a href="http://www.baidu.com/more/">全部产品>></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 手机版的天气信息和用户导航 -->
+        <div class="phone-top">
+            <div class="weather">
+                <!-- 一些图标暂时没有 -->
+                <i class="icon-weather"></i>
+                <div class="weather-num">10°</div>
+                <div class="weather-status">
+                    <p></p>
+                    <p></p>
+                </div>
+                <i class="icon-down"></i>
+            </div>
+            <div class="user">
+                <!-- 画个小人儿 -->
+                <div class="user-icon">
+                    <div class="circle"></div>
+                    <div class="half-circle"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索栏，手机版PC版都一样，共用，样式稍微调整 -->
+        <div class="search-box">
+            <div class="img">
+                <img src="data:image/png;base64,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" alt="logo" width="270" />
+            </div>
+            <div class="form-box">
+                <form name="form" action="/s" class="form">
+                    <input type="text" class="input-search" />
+                    <input name="search" class="submit-input" type="submit" value="百度一下" />
+                </form>
+            </div>
+        </div>
+        <!-- 电脑版用户登录后的频道 -->
+        <div class="channel-wrap">
+            <div class="channel-title">
+                <span class="my-watchlist focus">我的关注</span>
+                <div class="titles"> </div>
+            </div>
+            <div class="channel-set">
+                <i></i>
+            </div>
+            <div class="slide-menu-box">
+                <div class="slide-menu">
+                    <div class="slide-left">
+                        <h3>已订阅频道</h3>
+                        <div class="my-watchlist">我的关注</div>
+                        <div class="my-list"> </div>
+                    </div>
+                    <div class="slide-right">
+                        <h3>未订阅频道</h3>
+                        <div class="unsubscribed">
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">导航</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">推荐</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">音乐</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">体育</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">视频</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">购物</div>
+                            </div>
+                            <div class="mode-item-right">
+                                <div class="mode-icon"></div>
+                                <div class="mode-title">小说</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="channel-hide">
+                    <span id="channel-hide">隐藏频道</span>
+                </div>
+            </div>
+            <div class="channel-body">
+                <div id="channel0" class="channel-focus">我的关注的内容</div>
+                <div id="channel1">导航的内容</div>
+                <div id="channel2">推荐的内容</div>
+                <div id="channel3">音乐的内容</div>
+                <div id="channel4">体育的内容</div>
+                <div id="channel5">视频的内容</div>
+                <div id="channel6">购物的内容</div>
+                <div id="channel7">小说的内容</div>
+            </div>
+        </div>
+        <!-- 手机版nav -->
+        <!-- 这里暂缺图标 -->
+        <div class="phone-nav">
+            <ul class="nav-list">
+                <li><a href="http://news.baidu.com/">新闻</a></li>
+                <li><a href="http://dushu.baidu.com/">小说</a></li>
+                <li><a href="http://video.m.baidu.com/?from=wise_nav">视频</a></li>
+                <li><a href="http://life.m.baidu.com/?sfrom=wise_nav">糯米</a></li>
+                <li><a href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1">地图</a></li>
+                <li><a href="javascript:;">更多</a></li>
+            </ul>
+        </div>
+        <!-- 电脑底部 -->
+        <div class="footer-box">
+            <div class="footer">
+                <div class="footer1">
+                    <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png" alt="qrcode1" />
+                    <div class="footer1text">
+                        <p class="footertext1">手机百度</p>
+                        <p class="footertext2" style="color: #999">快人一步</p>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/nuomi_510f7472.png" alt="qrcode1" />
+                    <div class="footer2text">
+                        <p class="footertext1">百度糯米</p>
+                        <p class="footertext2">一元大餐</p>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <p id="lh">
+                        <a id="setf" href="//www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                        <a href="http://home.baidu.com">关于百度</a>
+                        <a href="http://ir.baidu.com">About Baidu</a>
+                    </p>
+                    <p class="footertext2">©2016 Baidu
+                        <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号
+                        <i class="c-icon-icrlogo"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 手机底部 -->
+        <div class="phone-footer">
+            <div class="copy"><a href="http://ufosdk.baidu.com/?m=Client&amp;a=postView&amp;appid=517&amp;activityId=1&amp;needEmail=false&amp;u=wise&amp;bw=32E7D3940E30DC01A09525216216CE20&amp;kw=&amp;tn=iphone" class="line1">用户反馈</a>
+                <a href="http://m.baidu.com/pub/help.php?pn=25&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1" class="line2">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" class="line3">京公网安备11000002000001号</a>
+            </div>
+            <div class="mycard">
+                管理我的卡片
+            </div>
+        </div>
+        <!-- 回到顶部 -->
+        <div class="to-top">
+            <div class="to-top">
+                <div class="icon-mask">
+                    <div class="text"> 回到顶部 </div>
+                </div>
+                <span class="icon"></span>
+            </div>
+        </div>
+    </div>
+    <!-- 读取浏览器当前页面高度 -->
+    <!-- 一些hove及简单的click事件 -->
+    <!-- 登录涉及的事件 -->
+    <!-- 天气，这里用sina的 -->
+    <!-- 换肤，只是改变背景色 -->
+    <!-- 复杂的频道设置，只完成主要部分 -->
+
+<script type="text/javascript" src="/static/jquery_202fefc.js"></script>
+<script type="text/javascript">
+    $("#container").height($(document).height());
+    </script>
+<script type="text/javascript" src="/static/app_732ef4c.js"></script>
+</body>
+
+</html>
