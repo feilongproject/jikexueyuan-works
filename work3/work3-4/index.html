@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>双飞翼布局</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <p>Head:头部，直接设置宽度100%（默认）</p>
+    </div>
+    <!-- 主体 -->
+    <div class="article">
+        <!-- 中间 -->
+        <div class="middle">
+            <!-- 中间内容 -->
+            <div class="inner">
+                <p>middle：主体部分，先设置主体盒子(如article)然后创建3个左中右的盒子，将最主要的内容（中间，middle盒子）放在最上面，再创建一个inner盒子，在inner盒子里写内容</p>
+                <p>让middle盒子float=left和width=100%</p>
+                <p>让inner盒子margin左右2个盒子的宽度</p>
+                <p>设置middle盒子overflow=hidden，然后让middle的子div设置margin-bottom=-9999px和padding-bottom=9999px实现三个盒子等高分布</p>
+            </div>
+        </div>
+        <!-- 左栏 -->
+        <div class="left">
+            <p>left：设置float=left和<b>margin-left=-100%</b></p>
+        </div>
+        <!-- 右栏 -->
+        <div class="right">
+            <p>right：设置float=left和<b>margin-left=-自身宽度</b></p>
+        </div>
+    </div>
+    <!-- 脚部 -->
+    <div class="footer">
+        <p>尾部©：和头部一样</p>
+    </div>
+</body>
+
+</html>

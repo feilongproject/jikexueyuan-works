@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度首页模仿</title>
+    <metahttp-equivmetahttp-equiv="x-ua-compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- 右上的导航 -->
+        <div class="top-right">
+            <ul>
+                <li class="top-nav"><a href="http://www.nuomi.com/?cid=002540"><b>糯米</b></a></li>
+                <li class="top-nav"><a href="http://news.baidu.com/"><b>新闻</b></a></li>
+                <li class="top-nav"><a href="http://www.hao123.com/"><b>hao123</b></a></li>
+                <li class="top-nav"><a href="http://map.baidu.com/"><b>地图</b></a></li>
+                <li class="top-nav"><a href="http://v.baidu.com/"><b>视频</b></a></li>
+                <li class="top-nav"><a href="http://tieba.baidu.com/"><b>贴吧</b></a></li>
+                <li class="top-nav"><a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+                <li class="top-nav setting">
+                    <div class="setting-container" style="">
+                        <a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+                        <div class="setting-box">
+                            <!-- 画一个小箭嘴 -->
+                            <div class="arrow"></div>
+                            <div class="setting-content">
+                                <ul>
+                                    <li class="setpref"><a href="javascript:;">搜索设置</a></li>
+                                    <li><a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a></li>
+                                    <li><a href="javascript:;">关闭预测</a></li>
+                                    <li><a href="javascript:;">搜索历史</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav more">
+                    <div class="more-container">
+                        <a>更多产品</a>
+                        <div class="more-select-box">
+                            <div class="more-select">
+                                <ul>
+                                    <li class="unchangable">更多产品</li>
+                                    <li><a href="http://music.baidu.com">音乐</a></li>
+                                    <li><a href="http://image.baidu.com">图片</a></li>
+                                    <li><a href="http://zhidao.baidu.com">知道</a></li>
+                                    <li><a href="http://wenku.baidu.com">文库</a></li>
+                                    <li><a href="http://top.baidu.com">风云榜</a></li>
+                                    <li><a href="http://e.baidu.com/?refer=888">百度推广</a></li>
+                                    <li class="all"><a href="http://www.baidu.com/more/">全部产品>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search-box">
+            <div class="img">
+                <img src="https://www.baidu.com/img/bd_logo1.png" alt="logo" width="270" />
+            </div>
+            <div>
+                <form name="form" action="/s" class="form">
+                    <input type="text" class="input-search" />
+                    <input name="search" class="submit-input" type="submit" value="百度一下" />
+                </form>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer-box">
+            <div class="footer">
+                <div class="footer1">
+                    <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png" alt="qrcode1" />
+                    <div class="footer1text">
+                        <p class="footertext1">手机百度</p>
+                        <p class="footertext2" style="color: #999">快人一步</p>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/nuomi_510f7472.png" alt="qrcode1" />
+                    <div class="footer2text">
+                        <p class="footertext1">百度糯米</p>
+                        <p class="footertext2">一元大餐</p>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <p id="lh">
+                        <a id="setf" href="//www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                        <a href="http://home.baidu.com">关于百度</a>
+                        <a href="http://ir.baidu.com">About Baidu</a>
+                    </p>
+                    <p class="footertext2">©2016 Baidu
+                        <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号
+                        <i class="c-icon-icrlogo"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 读取浏览器当前页面高度 -->
+    <script>
+    var Height = document.documentElement.clientHeight || document.body.clientHeight;
+    var container = document.getElementById("container");
+    container.style.height = Height + "px";
+    </script>
+</body>
+
+</html>

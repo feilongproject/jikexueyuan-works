@@ -1,0 +1,358 @@
+/*页面初始化*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 12px arial;
+    /*******************************************
+    ie6hover，文件网上找的
+    ********************************************/
+    behavior: url(csshover.htc);
+    /****************************************
+    ie css3样式，也是网上找的
+    *****************************************/
+    /*behavior: url(ie-css3.htc); *//*这个貌似无效？？？*/
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    color: #111;
+}
+
+li {
+    list-style-type: none;
+}
+
+#container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    min-height: 600px;
+}
+
+
+/*顶部样式设置*/
+
+.top-right {
+    width: 100%;
+}
+
+.top-right ul {
+    float: right;
+}
+
+.top-right .top-nav {
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 10px;
+    /*inline-block对ie6-7无效，貌似可以用inline代替*/
+    _display: inline;
+    _zoom: 1;
+    *display: inline;
+    *zoom: 1;
+}
+
+.top-right .top-nav a:hover {
+    color: #38f;
+}
+
+
+/*设置效果设置*/
+
+.top-right .top-nav .setting-container {
+    position: relative;
+    /*******************************************
+    不知道为什么ie6,ie7这里会高了1个font-size的高度
+    还是其余部分矮了1个font-size,这里将其“压”回去
+    *******************************************/
+    *top: 1em;
+}
+
+.top-right .top-nav .setting-container .setting-box {
+    padding: 5px;
+    position: relative;
+}
+/*小箭嘴*/
+.top-right .top-nav .setting-container .arrow {
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    margin: 0 auto;
+    border-left: solid 1px #999;
+    border-top: solid 1px #999;
+    background-color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    /******************************
+    ie6-ie8的旋转效果，数据参考
+    http://www.useragentman.com/IETransformsTranslator/
+    貌似ie6无效？？？
+    ******************************/
+    /* IE8+ - must be on one line, unfortunately ie8旋转效果 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+    /* IE6 and 7 这里貌似要换行，不能用prittify code优化，否则ie7ie8旋转效果消失*/
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=0.7071067811865474,
+            M12=-0.7071067811865477,
+            M21=0.7071067811865477,
+            M22=0.7071067811865474,
+            SizingMethod='auto expand');
+
+    /*
+    * To make the transform-origin be the middle of
+    * the object.    Note: These numbers
+    * are approximations.  For more accurate results,
+    * use Internet Explorer with this tool.
+    */
+    /* *margin-left: -5px; 
+   *margin-top: -5px;*/
+}
+
+.top-right .top-nav .setting-container .setting-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px #999;
+    box-shadow: 1px 1px 1px #999;
+    text-align: center;
+    top: 10px;
+    right: -20px;
+    width: 70px;
+}
+/*hover及其一些列表样式*/
+.top-right .top-nav .setting-container:hover .arrow {
+    display: block;
+    position: absolute;
+}
+
+.top-right .top-nav .setting-container:hover .setting-content {
+    display: block;
+    position: absolute;
+}
+
+.top-right .top-nav .setting-container:hover .setting-content ul {
+    width: 70px;
+}
+
+.top-right .top-nav .setting-container .setting-content li {
+    padding: 10px;
+    color: #000;
+}
+
+.top-right .top-nav .setting-container .setting-content li:hover {
+    background-color: #38f;
+}
+
+.top-right .top-nav .setting-container .setting-content a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.top-right .top-nav .setting-container .setting-content li:hover a {
+    color: #fff;
+}
+
+
+/*“更多产品”效果设置*/
+
+.top-right .top-nav.more .more-container {
+    background-color: #38f;
+    padding: 5px;
+}
+
+.top-right .top-nav.more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-right .top-nav .more-container .more-select {
+    display: none;
+    background-color: #ccc;
+    right: 0px;
+    /*ie6高度100%貌似无效，求解*/
+    height: 100%;
+    text-align: center;
+    /*ie7这里会背景全屏，设置宽度强行恢复原样*/
+    *width: 82px;
+}
+
+.top-right .top-nav .more-container .more-select li {
+    padding: 10px 5px;
+}
+
+.top-right .top-nav .more-container .more-select li.unchangable:hover {
+    cursor: default;
+}
+/*hover及其一些列表样式*/
+.top-right .top-nav .more-container:hover {
+    background-color: #ccc;
+}
+
+.top-right .top-nav .more-container:hover a {
+    color: #000;
+}
+
+.top-right .top-nav .more-container:hover .more-select {
+    display: block;
+    position: absolute;
+    margin-top: -46px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.top-right .top-nav .more-container:hover .more-select ul {
+    padding-top: 20px;
+}
+
+.top-right .top-nav .more-container:hover .more-select ul li a:hover {
+    text-decoration: underline;
+}
+
+.top-right .top-nav .more-container:hover .more-select ul li.all a {
+    text-decoration: underline;
+}
+
+
+/*搜索栏效果设置*/
+
+.search-box {
+    position: relative;
+    width: 100%;
+    top: 25%;
+}
+
+.search-box .img {
+    width: 272px;
+    margin: 0 auto;
+}
+
+.search-box .img img {
+    margin-top: -74px;
+    _margin-top: -45px;
+}
+
+.search-box .form {
+    width: 644px;
+    margin: 0 auto;
+}
+
+.input-search {
+    width: 540px;
+    height: 36px;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    outline: none;
+    /*ie6-ie8输入框垂直居中*/
+    line-height: 36px\9;
+}
+
+.input-search:hover {
+    border: 1px solid #999;
+    box-shadow: 0px 0px 1px #999 inset;
+}
+
+/*focus效果ie6，7无效*/
+.input-search:focus{
+    border: 1px solid #38c;
+    box-shadow: 0px 0px 0px #fff inset;
+}
+.submit-input {
+    width: 100px;
+    height: 38px;
+    float: left;
+    background-color: #38f;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.submit-input:hover {
+    background-color: #16b;
+    cursor: pointer;
+}
+
+
+/*底部效果设置*/
+
+.footer-box {
+    font-size: 10px;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 63px;
+}
+
+.footer-box .footer {
+    /*position: relative;*/
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .footer1 {
+    position: relative;
+    float: left;
+}
+
+.footer .footertext1 {
+    color: #000;
+}
+
+.footer .footertext2 {
+    color: #999;
+}
+
+.footer1 img {
+    float: left;
+    position: relative;
+}
+
+.footer1 .footer1text {
+    float: left;
+    position: relative;
+    left: 10px;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.footer .footer2 {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+.footer2 img {
+    float: left;
+    position: relative;
+}
+
+.footer2 .footer2text {
+    float: left;
+    position: relative;
+    left: 10px;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.footer .footer3 {
+    position: relative;
+    float: left;
+    left: 70px;
+    text-align: left;
+    margin: 8px 0 0 33px;
+    line-height: 23px;
+}
