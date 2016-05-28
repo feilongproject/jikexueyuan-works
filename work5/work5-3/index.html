@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>找到数组中出现次数最多的字母，并给出个数和每一个所在的顺序</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    div {
+        margin: 20px;
+        line-height: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="find">
+        <p>找出数组["a", "x", "b", "d", "m", "a", "k", "m", "p", "j", "a"]中出现最多的字母及其所在位置</p>
+    </div>
+    <script type="text/javascript">
+    var arr = ["a", "x", "b", "d", "m", "a", "k", "m", "p", "j", "a"];
+    //换一个测试下
+    //["a", "x", "b", "d", "m", "a", "k", "m", "p", "j", "a","m","b","b"]
+    //["a", "x", "b", "b", "m", "a", "k", "m", "p", "j", "a","b","b"]
+    var count = {}; //记录次数
+    var pos = {}; //统计位置
+    //遍历arr，统计每个字母出现次数且记录位置
+    arr.forEach(function(value, index) {
+        if (count[value]) { //曾经统计过的再次遇到时count+1并且增加记录位置
+            count[value]++;
+            pos[value] += "," + index;
+        } else { //第一次统计到的count设置为1，并记录一次位置
+            count[value] = 1;
+            pos[value] = "" + index;
+        }
+    });
+    //console.log(count);
+    //console.log(pos);		//检查count和pos是否正确用的
+    //获取出现最多的次数，考虑到有可能出现多个最大值，分开统计
+    var max = 0;
+    for (i in count) {
+        if (count[i] > max) {
+            max = count[i];
+        }
+    }
+    //列出出现最多次数的字母和所在位置
+    var letter;
+    var write;
+    var content = document.getElementById("find");
+    for (i in count) {
+        if (count[i] == max) {
+            letter = i;
+            content.innerHTML = content.innerHTML + "<p>最多的是：" + letter + "</p><p>位置分布：" + pos[letter] + "</p>";
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>10分为界分等级</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: #030303;
+    }
+    
+    div {
+        margin: 20px;
+    }
+    
+    p {
+        margin: 20px;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="score">请输入分数：</label>
+        <input id="score" type="number" min="0" max="100" step="1" />
+        <input type="submit" value="分级" onclick="rating()" />
+    </div>
+    <p>分数为<span id="copyScore"> </span>的等级为<span id="rate"> </span>等级。</p>
+    <script type="text/javascript">
+    function rating() {
+        var score = document.getElementById("score").value; //读取输入成绩；
+        var rate = document.getElementById("rate");
+        if (score < 0 || score > 100) { //判断分数范围
+            alert("请输入0-100的分数");
+        } else {
+            document.getElementById("copyScore").innerHTML = score;
+            //分级
+            if (score >= 90) {
+                rate.innerHTML = "1";
+            } else if (score >= 80) {
+                rate.innerHTML = "2";
+            } else if (score >= 70) {
+                rate.innerHTML = "3";
+            } else if (score >= 60) {
+                rate.innerHTML = "4";
+            } else if (score >= 50) {
+                rate.innerHTML = "5";
+            } else if (score >= 40) {
+                rate.innerHTML = "6";
+            } else if (score >= 30) {
+                rate.innerHTML = "7";
+            } else if (score >= 20) {
+                rate.innerHTML = "8";
+            } else if (score >= 10) {
+                rate.innerHTML = "9";
+            } else {
+                rate.innerHTML = "10";
+            }
+            var black = "#030303";
+            var red = "#FF0202";
+            if (score < 60) {
+                rate.style.color = red;
+                document.getElementById("copyScore").style.color = red;
+            } else {
+                rate.style.color = black;
+                document.getElementById("copyScore").style.color = black;
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
