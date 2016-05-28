@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>手机百度新闻模仿</title>
+    <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="backlogin">
+            <a href="/login" target="_blank">登陆后台</a>
+        </div>
+        <div class="logo-wrap">
+            <div class="logo1"></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="nav">
+            <ul>
+                <li class="underline" classify='*'>全部新闻</li>
+                <i class="s-line"></i>
+                <li classify="体育">体育</li>
+                <i class="s-line"></i>
+                <li classify="科技">科技</li>
+                <i class="s-line"></i>
+                <li classify="娱乐">娱乐</li>
+            </ul>
+        </div>
+        <div class="artical">
+            <div class="allnews">
+            <% newsshow.forEach(function(newsshow){ %>
+        		<a href=<%= newsshow.newsurl %> target='_blank' class='newsbox'>
+        		<div class="imgbox">
+        			<img src=<%= newsshow.newsimg %> alt=<%= newsshow.newsid %> onerror="this.src='/images/error.jpg'">
+        		</div>
+        		<div class="articalbox">
+        			<div class="newstitle">
+        				<h6><%= newsshow.newstitle %></h6>
+        			</div>
+        			<div class="newscontent">
+        				<p><%= newsshow.newscontent %></p>
+        			</div>
+        			<div class="newsdate">
+        				<p><%= newsshow.adddate %></p>
+        			</div>
+        		</div>
+        		</a>
+    		<% }) %>
+            </div>
+            <input type="hidden" value="1" id="page">
+            <div class="addmore showmore">显示更多</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/management.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+    <!-- nav导航条 -->
+    <nav class="navbar navbar-default">
+        <!-- 100%宽度 -->
+        <div class="container-fluid">
+            <div class="container">
+                <!-- 手机端的导航 -->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">假冒伪劣的百度新闻后台管理</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- 放在右侧的菜单和搜索栏 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="user-name"><%= user %>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a id="logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="row">
+            <!-- left左 -->
+            <div class="col-sm-12 pull-left">
+                <!-- part1 -->
+                <!-- 创建面板 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">添加新闻</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="widget big-stats-container">
+                            <form id="addnewsform" method="post">
+                                <% if (locals.error) { %> 
+                                    <div id="alt_warning" class="alert alert-warning"> 
+                                        <%= error %> 
+                                    </div> 
+                                <% } %>
+                                <p>
+                                    <label for="classify">新闻类别:</label>
+                                    <input type="text" id="classify" name="classify" placeholder="请输入类别" required="required"></input>
+                                </p>
+                                <p>
+                                    <label for="newstitle">新闻标题:</label>
+                                    <input type="text" id="newstitle" name="newstitle" placeholder="请输入标题" required="required"></input>
+                                </p>
+                                <p>
+                                    <label for="newsurl">新闻源地址:</label>
+                                    <input type="text" id="newsurl" name="newsurl" placeholder="请输入源地址" required="required"></input>
+                                </p>
+                                <p>
+                                    <label for="newsimg">新闻图片地址:</label>
+                                    <input type="text" id="newsimg" name="newsimg" placeholder="请输入图片地址" required="required"></input>
+                                </p>
+                                <p>
+                                    <label for="newscontent">新闻内容:</label>
+                                    </br>
+                                    <textarea id="newscontent" name="newscontent" placeholder="请输入新闻内容（正文）" required="required"></textarea>
+                                </p>
+                                <p>
+                                    <input type="submit" value="保存" id="addnews"></input>
+                                </p>
+                                <p id="out"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- part2 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻信息查找与更新</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="widget big-stats-container">
+                            <p>
+                                <label for="searchtext">请输入搜索内容:</label>
+                                <input type="text" id="searchtext" name="searchtext" placeholder="搜索关键字" required="required"></input>
+                                <input type="button" value="搜索" id="search"></input>
+                            </p>
+                            <div class="DBlook">
+                                <table id="newsDB" border="1" cellspacing="0" cellpadding="0">
+                                    <tbody id="DBbody">
+                                        <tr>
+                                            <th width="30">删除</th>
+                                            <th width="50">newsid</th>
+                                            <th width="80">classify</th>
+                                            <th width="100">title</th>
+                                            <th width="150">url</th>
+                                            <th width="150">img</th>
+                                            <th width="200">content</th>
+                                            <th width="80">addtime</th>
+                                        </tr>
+                                        <% newslist.forEach(function(newslist){ %>
+                                            <tr newsrow='newsrow'>
+                                                <td class="deletebox">
+                                                    <input type="button" class="deletebtn" value="删除" tbline=<%= newslist.newsid %> />
+                                                </td>
+                                                <td class="editIt" tbhead='newsid' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newsid %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='newsclassify' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newsclassify %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='newstitle' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newstitle %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='newsurl' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newsurl %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='newsimg' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newsimg %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='newscontent' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.newscontent %></span>
+                                                </td>
+                                                <td class="editIt" tbhead='adddate' tbline=<%= newslist.newsid %>>
+                                                    <span><%= newslist.adddate %></span>
+                                                </td>
+                                            </tr>
+                                        <% }) %>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        &copy; 2015
+                        <a href="#">Bootstrap Responsive Admin Template</a>.
+                    </div>
+                    <!-- /span12 -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /footer-inner -->
+    </div>
+    <div id="editDB">
+        <textarea id="edit-content"></textarea>
+    </div>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/management.js"></script>
+    <!-- <script src="/javascripts/logout.js"></script> -->
+</body>
+
+</html>
