@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery瀑布流效果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+</head>
+
+<body>
+    <h1>图片瀑布流效果展示</h1>
+    <!-- 创建一个图片墙 -->
+    <!-- 每张图片设置一个div class=img包裹 -->
+    <!-- 使用img-box将所有img包起来方便设置间距及边框 -->
+    <div id="container">
+        <div class="img-box">
+        	<div class="img"><img src="img/1.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/2.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/3.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/4.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/5.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/6.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/7.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/8.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/9.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/10.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/11.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/12.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/13.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/14.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/15.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/16.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/17.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/18.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/19.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/20.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/21.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/22.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/23.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/24.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/25.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/26.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/27.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/28.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/29.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+        <div class="img-box">
+        	<div class="img"><img src="img/30.jpg" alt="" /></div>
+        	<div class="hover-box">
+        		<div class="hover"></div>
+        	</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

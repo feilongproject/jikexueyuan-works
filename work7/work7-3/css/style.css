@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 10%;
+}
+
+p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+
+
+/*container效果*/
+
+#container {	
+    width: 80%;
+    min-width: 404px;
+    margin: 40px auto;
+    position: relative;
+}
+/*设置img-box浮动*/
+
+#container .img-box {
+    position: absolute;
+    float: left;
+    overflow: hidden;
+}
+
+
+/*设置img间距边框等属性*/
+
+#container .img-box .img {
+    padding: 10px;
+    border: 1px solid #D5D3DB;
+    box-shadow: 0 0 5px #D5D3DB;
+    border-radius: 5px;
+}
+
+
+/*让所有图片等宽分布*/
+
+#container .img-box .img img {
+    width: 180px;
+    height: auto;
+}
+
+/*图片信息*/
+#container .img-box .hover-box {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+#container .img-box .hover-box .hover{
+	background: #C3C1C1;
+    opacity: 0.5;
+    display: none;
+    position: relative;
+}
