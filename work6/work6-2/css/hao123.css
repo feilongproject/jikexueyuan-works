@@ -1,0 +1,298 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*顶部样式*/
+
+.top-wrap {
+    min-width: 990px;
+    width: 100%;
+    height: 62px;
+    position: relative;
+    text-align: center;
+}
+
+.top-wrap .top {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-wrap .top>div {
+    cursor: pointer;
+    
+}
+
+
+/*logo*/
+
+.top-wrap .top .logo {
+    float: left;
+    width: 168px;
+    height: 60px;
+    border: 1px solid #A99999;
+    position: relative;
+    line-height: 60px;
+}
+
+
+/*地区等信息*/
+
+.top-wrap .top .col {
+    float: left;
+    width: 330px;
+    height: 60px;
+    border: 1px solid #A99999;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    line-height: 60px;
+}
+
+.top-wrap .top .col>div {
+    border: 1px solid #A99999;
+}
+
+.top-wrap .top .col .set {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    box-flex: 2;
+}
+
+.top-wrap .top .col .area {
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -ms-box-flex: 4;
+    box-flex: 4;
+}
+
+.top-wrap .top .col .date {
+    -webkit-box-flex: 3;
+    -moz-box-flex: 3;
+    -ms-box-flex: 3;
+    box-flex: 3;
+}
+
+
+/*用户及设置*/
+
+.top-wrap .top .links {
+    width: 410px;
+    height: 60px;
+    float: right;
+    position: relative;
+    line-height: 60px;
+}
+
+.top-wrap .top .links>div {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.top-wrap .top .links .login {
+    width: 44px;
+}
+
+.top-wrap .top .links .mail,
+.top-wrap .top .links .skin {
+    width: 68px;
+}
+
+
+/*广告*/
+
+.top-wrap .top .ad {
+    width: 222px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+}
+
+
+/*皮肤*/
+
+.top-wrap .colorpick {
+    width: 100px;
+    position: absolute;
+    right: 210px;
+    top: 45px;
+    border: 1px solid #26CE6A;
+    display: none;
+}
+
+#color {
+    width: 88px;
+    height: 20px;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+}
+
+#color-submit,
+#color-cancel {
+    width: 50%;
+    height: 25px;
+    margin: 0;
+    position: relative;
+    float: left;
+    border: 1px solid #26CE6A;
+}
+
+
+/*搜索栏*/
+
+.search-box {
+    width: 990px;
+    height: 40px;
+    margin: 50px auto 20px;
+    position: relative;
+}
+
+.search-box .form {
+    width: 644px;
+    margin: 0 auto;
+}
+
+.input-search {
+    width: 540px;
+    height: 36px;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    outline: none;
+    /*ie6-ie8输入框垂直居中*/
+    line-height: 36px\9;
+    padding-left: 6px;
+}
+
+.input-search:hover {
+    border: 1px solid #999;
+    box-shadow: 0px 0px 1px #999 inset;
+}
+
+.input-search:focus {
+    border: 1px solid #38c;
+    box-shadow: 0px 0px 0px #fff inset;
+}
+
+.submit-input {
+    width: 100px;
+    height: 39px;
+    float: left;
+    background-color: #E9EAEC;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    margin-left: -6px;
+    cursor: pointer;
+}
+
+
+/*导航*/
+
+.nav-wrap {
+    width: 990px;
+    height: 38px;
+    margin: 20px auto;
+    position: relative;
+    background-color: #fff;
+    border-top: 2px solid #1DED10;
+}
+
+.nav-wrap ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-wrap ul li {
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 38px;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+
+.nav-wrap ul li:first-child {
+    background-color: #1DED10;
+    width: 81px;
+}
+
+.nav-wrap ul li:first-child a,
+.nav-wrap ul li:first-child a:hover {
+    color: #fff;
+}
+
+.nav-wrap ul .s-line {
+    display: inline-block;
+    height: 20px;
+    border-left: 1px solid #A49A9A;
+    position: relative;
+    top: 10px;
+    margin: 0;
+    float: left;
+}
+
+.nav-wrap ul li a:hover {
+    color: #59C04D;
+}
+
+
+/*内容*/
+
+.content-box {
+    width: 990px;
+    height: 1918px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/*右边的主要内容*/
+
+.content-box .right {
+    float: right;
+    width: 700px;
+    height: 100%;
+    border: 1px solid #A99999;
+    background-color: #D9D5D5;
+}
+
+
+/*左边的次要内容*/
+
+.content-box .left {
+    float: left;
+    width: 280px;
+    height: 100%;
+    border: 1px solid #A99999;
+    background-color: #D9D5D5;
+}
+
+/*脚部*/
+.footer-box{
+	width: 990px;
+	height: 50px;
+	margin: 20px auto;
+	border: 1px solid #4ACD4F;
+}

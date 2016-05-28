@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hao123顶部的模仿及颜色修改</title>
+    <link rel="stylesheet" type="text/css" href="css/hao123.css">
+</head>
+
+<body>
+<!-- 顶部 -->
+    <div class="top-wrap">
+        <div class="top">
+            <div class="logo">logo的地盘</div>
+            <div class="col">
+                <div class="set">设为首页</div>
+                <div class="area">地区及其天气</div>
+                <div class="date">日期</div>
+            </div>
+            <div class="links">
+                <div class="login">登录</div>
+                <div class="mail">邮箱</div>
+                <div class="skin" id="skin">换肤</div>
+            </div>
+            <div class="ad">广告的地盘</div>
+            <div class="colorpick" id="colorpick">
+                <input id="color" type="color" value="#D9D5D5" />
+                <input id="color-submit" type="submit" value="确认" />
+                <input id="color-cancel" type="submit" value="取消" />
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="search-box">
+        <div class="form-box">
+            <form name="form" action="/s" class="form">
+                <input type="text" class="input-search" />
+                <input name="search" class="submit-input" type="submit" value="百度一下" />
+            </form>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="nav-wrap">
+        <ul>
+            <li class="nav-select"><a href="">首页</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">电视剧</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">最新电影</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">新闻头条</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">八卦娱乐</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">军事热点</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">热门游戏</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">小游戏</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">今日特价</a></li>
+            <i class="s-line"></i>
+            <li class="nav-select"><a href="">特价旅游</a></li>
+        </ul>
+    </div>
+    <!-- 内容盒子 -->
+    <div class="content-box">
+        <div class="right">
+        	<p>这是右边的内容，hao123里的东西实在太多，而且作业只要求做更改背景颜色的效果，把整个网站模仿下来实在太费时间，就只做了外面的主要框架结构</p>
+        	<p>点击顶部换肤，选择颜色，点确认，此网页的背景色就变成选择的颜色了</p>
+        	<p>关掉浏览器，重新打开，还是上次改的背景色，除非清空本地缓存。清空本地缓存后或者第一次打开为默认背景色</p>
+        </div>
+        <div class="left">这是左边的内容，内容比较次要，放后面</div>
+    </div>
+    <div class="footer-box">
+    	这是脚部
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="js/colorChange.js"></script>
+</body>
+
+</html>
