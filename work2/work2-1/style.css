@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置cross-box页面居中*/
+
+.cross-box {
+    /*100x3+1x4*/
+    width: 304px;
+    height: 304px;
+    /*使用绝对定位后将盒子左上角原点移至网页中心，
+    然后使用margin将盒子中心移至网页中心实现居中定位*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -152px 0 0 -152px;
+}
+
+.cross-box .cross {
+    width: 100px;
+    height: 100px;
+    background-color: #08b;
+    box-shadow: 10px 10px 2px 2px #555;
+}
+
+#cross1 {
+    margin: 0 auto;
+    position: relative;    
+    border-top: solid 1px #ea0;
+    border-left: solid 1px #ea0;
+    border-right: solid 1px #ea0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cross2 {
+    float: left;
+    position: relative;
+    border-top: solid 1px #ea0;
+    border-left: solid 1px #ea0;
+    border-bottom: solid 1px #ea0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#cross3 {
+    float: left;
+    position: relative;
+    border-top: solid 1px #ea0;
+    border-bottom: solid 1px #ea0;
+    border-left: solid 1px #ea0;
+}
+
+
+/*设置img盒子内居中*/
+
+
+/*根据老师提供的方法重做一个*/
+
+#cross3 img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/*********************************
+另一些一些居中方法
+#cross3 {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;\\这个是作业2-4完成后的居中，还有-ms-box，-o-box等前缀兼容不同的浏览器
+}
+********************************/
+
+#cross4 {
+    float: left;
+    position: relative;
+    border: solid 1px #ea0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cross5 {
+    float: left;
+    position: relative;
+    left: 101px;
+    box-shadow: 10px 10px 2px 2px #555;
+    border-left: solid 1px #ea0;
+    border-right: solid 1px #ea0;
+    border-bottom: solid 1px #ea0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

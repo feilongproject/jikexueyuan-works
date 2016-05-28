@@ -1,0 +1,281 @@
+/*页面初始化*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 12px arial;
+}
+
+a {
+    color: #111;
+}
+
+li {
+    list-style-type: none;
+}
+
+#container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    min-height: 600px;
+}
+
+
+/*顶部样式设置*/
+
+.top-right {
+    width: 100%;
+}
+
+.top-right ul {
+    float: right;
+}
+
+.top-right .top-nav {
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 10px;
+}
+
+.top-right .top-nav a:hover {
+    color: #00d;
+}
+
+
+/*设置效果设置*/
+
+.top-right .top-nav .setting-container .setting-box {
+    padding: 5px;
+    position: relative;
+}
+
+.top-right .top-nav .setting-container .arrow {
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    border-left: solid 1px #999;
+    border-top: solid 1px #999;
+    background-color: #fff;
+}
+
+.top-right .top-nav .setting-container .setting-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px #999;
+    box-shadow: 1px 1px 1px #999;
+    text-align: center;
+    top: 10px;
+    right: -20px;
+    width: 70px;
+}
+
+.top-right .top-nav .setting-container:hover .arrow {
+    display: block;
+    position: absolute;
+}
+
+.top-right .top-nav .setting-container:hover .setting-content {
+    display: block;
+    position: absolute;
+}
+
+.top-right .top-nav .setting-container .setting-content li {
+    padding: 10px;
+    color: #000;
+}
+
+.top-right .top-nav .setting-container .setting-content li:hover {
+    background-color: #00f;
+}
+
+.top-right .top-nav .setting-container .setting-content a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.top-right .top-nav .setting-container .setting-content li:hover a {
+    color: #fff;
+}
+
+
+/*“更多产品”效果设置*/
+
+.top-right .top-nav.more .more-container {
+    background-color: #00f;
+    padding: 5px;
+}
+
+.top-right .top-nav.more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*.top-right .top-nav .more-container .more-select-box {
+    display: none;
+}*/
+
+.top-right .top-nav .more-container .more-select {
+    display: none;
+    background-color: #ccc;
+    right: 0px;
+    height: 100%;
+    text-align: center;
+}
+
+.top-right .top-nav .more-container .more-select li {
+    padding: 10px 5px;
+}
+
+.top-right .top-nav .more-container .more-select li.unchangable:hover {
+    cursor: default;
+}
+
+.top-right .top-nav .more-container:hover {
+    background-color: #ccc;
+}
+
+.top-right .top-nav .more-container:hover a {
+    color: #000;
+}
+
+.top-right .top-nav .more-container:hover .more-select {
+    display: block;
+    position: absolute;
+    margin-top: -46px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.top-right .top-nav .more-container:hover .more-select ul {
+    padding-top: 20px;
+}
+.top-right .top-nav .more-container:hover .more-select ul li a:hover{
+    text-decoration: underline;
+}
+
+.top-right .top-nav .more-container:hover .more-select ul li.all a{
+    text-decoration: underline;
+}
+/*搜索栏效果设置*/
+
+.search-box {
+    position: relative;
+    width: 100%;
+    top: 25%;
+}
+
+.search-box .img {
+    width: 272px;
+    margin: 0 auto;
+}
+
+.search-box .img img {
+    margin-top: -74px;
+}
+
+.search-box .form {
+    width: 644px;
+    margin: 0 auto;
+}
+
+.input-search {
+    width: 540px;
+    height: 36px;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.input-search:hover {
+    border: 1px solid #666;
+}
+
+.submit-input {
+    width: 100px;
+    height: 38px;
+    float: left;
+    background-color: #00f;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.submit-input:hover {
+    background-color: #00b;
+    cursor: pointer;
+}
+
+
+/*底部效果设置*/
+
+.footer-box {
+    font-size: 10px;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 63px;
+}
+
+.footer-box .footer {
+    /*position: relative;*/
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .footer1 {
+    position: relative;
+    float: left;
+}
+
+.footer1 img {
+    float: left;
+    position: relative;
+}
+
+.footer1 .footer1text {
+    float: left;
+    position: relative;
+    left: 10px;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.footer .footer2 {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+.footer2 img {
+    float: left;
+    position: relative;
+}
+
+.footer2 .footer2text {
+    float: left;
+    position: relative;
+    left: 10px;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.footer .footer3 {
+    position: relative;
+    float: left;
+    left: 70px;
+    text-align: left;
+    margin: 8px 0 0 33px;
+    line-height: 23px;
+}

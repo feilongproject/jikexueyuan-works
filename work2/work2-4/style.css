@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 20px;
+}
+
+
+/*正常盒子与怪异盒子对比*/
+
+.normal-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px;
+    background-color: #0cf;
+    border: 5px solid #f00;
+}
+
+.normal-box .normal-content {
+    width: 100px;
+    height: 100px;
+    background-color: #fc0;
+}
+
+.weird-box {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    margin: 30px;
+    background-color: #0cf;
+    border: 5px solid #f00;
+    box-sizing: border-box;
+}
+
+.weird-box .weird-content {
+    width: 100px;
+    height: 100px;
+    background-color: #fc0;
+}
+
+
+/*弹性盒子分栏与排序*/
+
+
+/*水平分栏（纵向排列）*/
+
+.vertical {
+    margin: 20px auto;
+    width: 600px;
+    height: 150px;
+    background-color: #990;
+    color: #fff;
+    /*根据要求要兼容各种浏览器，我只查到这4种,下同*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+
+.vertical1 {
+    width: 100%;
+    background-color: #900;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+}
+
+.vertical2 {
+    width: 100%;
+    background-color: #090;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    -o-box-flex: 2;
+}
+
+.vertical3 {
+    width: 100%;
+    background-color: #009;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -ms-box-flex: 4;
+    -o-box-flex: 4;
+}
+
+
+/*垂直分栏（横向排列）*/
+
+.horizontal {
+    margin: 20px auto;
+    width: 980px;
+    height: 150px;
+    background-color: #990;
+    color: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -o-box-orient: horizontal;
+}
+
+.horizontal1 {
+    height: 100%;
+    background-color: #900;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+}
+
+.horizontal2 {
+    height: 100%;
+    background-color: #090;
+    -webkit-flex: 2;
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    -o-box-flex: 2;
+}
+
+.horizontal3 {
+    height: 100%;
+    background-color: #009;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -ms-box-flex: 4;
+    -o-box-flex: 4;
+}
+
+
+/*cloumn分栏*/
+
+.cloumn {
+    width: 980px;
+    margin: 20px auto;
+    -webkit-columns: 10px 5;
+    -webkit-column-gap: 50px;
+    -webkit-column-rule: 10px solid #090;
+    -moz-columns: 10px 5;
+    -moz-column-gap: 50px;
+    -moz-column-rule: 10px solid #090;
+    -ms-columns: 10px 5;
+    -ms-column-gap: 50px;
+    -ms-column-rule: 10px solid #090;
+    -o-columns: 10px 5;
+    -o-column-gap: 50px;
+    -o-column-rule: 10px solid #090;
+}
+
+
+/*排序flex*/
+
+.flex {
+    width: 980px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #a9e;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+}
+
+.flex p {
+    margin: 0;
+}
+
+.flex .hidden {
+    color: #a9e;
+}
+
+.flex1 {
+    border: solid 2px #f00;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-order: 3;
+    -moz-order: 3;
+    -ms-order: 3;
+    -o-order: 3;
+}
+
+.flex2 {
+    border: solid 2px #f00;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-order: 4;
+    -moz-order: 4;
+    -ms-order: 4;
+    -o-order: 4;
+}
+
+.flex3 {
+    border: solid 2px #f00;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    -o-order: 1;
+}
+
+.flex4 {
+    border: solid 2px #f00;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-order: 5;
+    -moz-order: 5;
+    -ms-order: 5;
+    -o-order: 5;
+}
+
+.flex5 {
+    border: solid 2px #f00;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    -o-order: 2;
+}
+
+
+/*旧版弹性盒子居中布局*/
+
+.center {
+    margin: 30px;
+    width: 200px;
+    height: 100px;
+    background-color: #7c0;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -o-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+}
