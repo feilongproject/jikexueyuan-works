@@ -1,0 +1,207 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 微软雅黑;
+  font-size: 12px;
+  background-color: #000;
+}
+p {
+  margin: 0;
+}
+.bus-wrap {
+  width: 1000px;
+  margin: 20px auto;
+  position: relative;
+}
+.station-name {
+  position: relative;
+  border-left: 2px solid #3e8c50;
+  border-right: 2px solid #3e8c50;
+  background-color: #fff;
+}
+.station-name .chinese {
+  font-size: 60px;
+}
+.station-name .chinese p {
+  text-align: center;
+  font-weight: 800;
+}
+.station-name .pinyin {
+  width: 100%;
+  font-size: 24px;
+}
+.station-name .pinyin p {
+  text-align: center;
+  font-weight: 600;
+}
+.station-name p {
+  color: #4e6656;
+}
+.green {
+  background-color: #3e8c50;
+}
+.stop-bus {
+  height: 172px;
+  position: relative;
+}
+.stop-bus .top {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.stop-bus .left {
+  background-color: #4e6656;
+  border-left: 2px solid #fff;
+}
+.stop-bus .left .company {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  top: -7px;
+  left: 20px;
+  display: inline-block;
+}
+.stop-bus .left .company p {
+  color: #b7d54f;
+  font-weight: 600;
+  font-size: 18px;
+}
+.stop-bus .left .number {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 60px;
+  top: -3px;
+  left: 25px;
+}
+.stop-bus .left .number p {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 800;
+}
+.stop-bus .left .next-station p {
+  color: #ea1e1d;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.stop-bus .left .price {
+  position: relative;
+  margin-left: 15px;
+  top: 3px;
+  left: 0;
+}
+.stop-bus .left .price p {
+  color: #b7d54f;
+  font-weight: 600;
+  display: inline-block;
+}
+.stop-bus .left .price p:last-child {
+  margin-left: 10px;
+}
+.stop-bus .left .time {
+  position: relative;
+  margin-left: 15px;
+  top: 3px;
+  left: 0;
+}
+.stop-bus .left .time p {
+  color: #b7d54f;
+  font-weight: 600;
+  display: inline-block;
+}
+.stop-bus .left .time p:last-child {
+  margin-left: 10px;
+}
+.stop-bus .left .to-where {
+  margin-top: 5px;
+  transform-origin: 0 0;
+}
+.stop-bus .left .to-where p {
+  color: #b7d54f;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+.stop-bus .right {
+  background-color: #b7d54f;
+  border-right: 2px solid #fff;
+  color: #4e6656;
+  font-weight: 600;
+}
+.stop-bus .right .stations {
+  height: 140px;
+  overflow: hidden;
+  list-style: none;
+  margin-top: 10px;
+}
+.stop-bus .right .stations .name {
+  float: left;
+  display: inline;
+  height: 140px;
+  word-wrap: break-word;
+  word-break: nomal;
+  line-height: 20px;
+}
+.stop-bus .right .stations .another-name {
+  float: left;
+  display: inline;
+  word-wrap: break-word;
+  word-break: nomal;
+  min-height: 10px;
+}
+.s-top {
+  height: 12px;
+  position: relative;
+}
+.left {
+  position: relative;
+  width: 198px;
+  height: 160px;
+  float: left;
+}
+.right {
+  position: relative;
+  width: 798px;
+  height: 160px;
+  float: right;
+}
+.cilcle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b7d54f;
+}
+.red-color {
+  color: #ea1e1d;
+}

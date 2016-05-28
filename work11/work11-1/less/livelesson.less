@@ -1,0 +1,280 @@
+#livelesson {
+    width: 1000px;
+    .m-0-auto(10px);
+    .relative;
+    font-size: @font;
+    .liveimg {
+        .floatL;
+        .w-h(210px,
+        @liveHeight);
+        .border;
+        img {
+            width: 208px;
+        }
+    }
+    .livebox {
+        .mar-l(210px);
+        .w-h(790px,
+        @liveHeight);
+    }
+    .livebox-week {
+        height: 40px;
+        .weekactive {
+            color: @green;
+            .borderT(@green,
+            2px);
+            border-bottom: 0;
+            .borderL(@rgbf5);
+            .borderR(@rgbf5);
+            line-height: 38px;
+        }
+    }
+    .livebox-week-day {
+        .w-h(158px,
+        40px);
+        .floatL;
+        .text-cen;
+        line-height: 40px;
+        .borderT;
+        .borderB(@rgbf5);
+        &:first-child {
+            border-left: 0!important;
+        }
+    }
+    .livebox-lesson {
+        .relative;
+        height: 160px;
+        .over-hidden;
+        .lessonshow {
+            .block;
+        }
+    }
+    .livebox-lesson-list {
+        .w-h(100%,
+        160px);
+        .absolute;
+        .none;
+        .over-hidden;
+        .borderB;
+        .borderR;
+        .lesson-item {
+            height: 80px;
+            .borderB(@rgbf5);
+        }
+        .lesson-item-left {
+            .floatL;
+            .mar(15px);
+            .sq(44px);
+            .radius(50%);
+            img {
+                .block;
+                .sq(44px);
+            }
+        }
+        .lesson-item-right {
+            width: 125px;
+            .floatL(right);
+            .pad-t(20px);
+            .text-cen;
+            .bggray {
+                background-color: @grey*4;
+            }
+            .livebtn {
+                .block;
+                color: @white;
+                .w-h(67px,
+                20px);
+                line-height: 20px;
+                .m-0-auto(8px,
+                29px);
+                .radius(2px);
+            }
+            span {
+                color: @red2;
+            }
+            .bggreen {
+                background-color: @green;
+            }
+        }
+        .lesson-item-content {
+            color: @rgb8c;
+            .pad-t(10px);
+            h4 {
+                font-size: @font+2;
+                color: @grey;
+                .pad-b(5px);
+            }
+            p {
+                .pad-b(5px);
+                .over-hidden;
+                .ellipsis;
+                .nowrap;
+                i {
+                    .mar-b(2px);
+                    .inline-block;
+                    vertical-align: text-top;
+                    .bg-size;
+                    &.icon-teacher {
+                        .mar-r(3px);
+                        background-image: url(@icon-teacher);
+                        .w-h(13px,
+                        15px);
+                    }
+                    &.icon-clock {
+                        .sq(12px);
+                        .mar-l(15px);
+                        .mar-r(3px);
+                        background-image: url(@icon-clock);
+                        .mar-t(1px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.disabled:hover,
+.disabled:hover a {
+    cursor: not-allowed !important;
+}
+
+.part2commom {
+    .pad(10px);
+    background: @blacka20;
+    width: 420px;
+    .none;
+    .hd {
+        .t-l(10px,
+        10px);
+        right: 10px;
+        height: 40px;
+        .pad-d4(0,
+        30px,
+        0,
+        8px);
+        background: @rgbf3;
+        line-height: 40px;
+        cursor: default;
+        .absolute;
+    }
+    .close {
+        .absolute;
+        .t-r(20px,
+        20px);
+        font-size: 17px;
+        color: @rgb7e;
+        .pointer;
+        .sq(20px);
+        .radius(50%);
+        background: url(@part2-close) no-repeat center center / 14px 14px;
+    }
+}
+
+.live-sign-popup {
+    .part2commom;
+    .pop-content {
+        .p-0-auto(62px,
+        50px);
+        width: 400px;
+        background: @white;
+        .title {
+            font-size: @font*1.5;
+            .text-cen;
+        }
+        .info {
+            .mar-t(10px);
+            font-size: @font;
+            line-height: 1.5;
+            .text-cen;
+        }
+        .form {
+            .mar-t(12px);
+            input {
+                line-height: 38px;
+                height: 38px;
+                .mar-l(14px);
+                width: 270px;
+            }
+            .input-box {
+                .mar-t(10px);
+                height: 40px;
+            }
+            .phone-number {
+                input {
+                    width: 170px;
+                }
+            }
+            .get-code {
+                .inline-block;
+                .radius(4px);
+                background: @rgbea;
+                color: @grey*2;
+                .w-h(90px,
+                25px);
+                vertical-align: middle;
+                .mar-l(10px);
+                line-height: 25px;
+                .text-cen;
+                margin-top: 6px\9\0;
+            }
+            .code-box {
+                width: 170px;
+                input {
+                    .w-h(140px,
+                    38px);
+                    line-height: 38px;
+                }
+            }
+            .type {
+                select {
+                    .w-h(234px,
+                    37px);
+                    background: @white;
+                    line-height: 48px;
+                    outline: 0;
+                }
+            }
+            .sign-submit {
+                .w-h(300px,
+                40px);
+                line-height: 40px;
+                .text-cen;
+                color: @white;
+                background-color: @green;
+                .mar-t(20px);
+                .block;
+                font-size: @font/3*4;
+            }
+        }
+        .b1 {
+            .border;
+        }
+    }
+}
+
+.addreserve {
+    .part2commom;
+    .pop-content {
+        width: 400px;
+        .m-0-auto;
+        .pad-d3(68px,
+        40px,
+        55px);
+        color: @grey;
+        background: @white;
+        .re-title {
+            .text-cen;
+            font-size: 19px;
+            .pad-b(20px);
+            p {
+                .pad-b(12px);
+                font-size: @font+2;
+            }
+        }
+        .create-notice {
+            .inline-block;
+            vertical-align: bottom;
+            width: 90px;
+        }
+    }
+}

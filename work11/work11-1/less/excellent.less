@@ -1,0 +1,173 @@
+.lesson-card {
+    .relative;
+    .w-h(235px,
+    261px);
+    .pad(16px);
+    .border;
+    font-size: @font;
+    .transition-s-t;
+    .border-box;
+    .mar-l(20px);
+    * {
+        .border-box(inherit);
+    }
+    &:nth-child(1) {
+        .mar-l;
+    }
+    :nth-child(4n+1) {
+        .mar-l;
+    }
+    h2 {
+        .over-hidden;
+        .ellipsis;
+        .nowrap;
+        width: 80%;
+        .mar-b(15px);
+        font-size: 14px;
+        font-weight: @fw400;
+        line-height: 1;
+    }
+    .images {
+        .over-hidden;
+        .mar-b(15px);
+        img {
+            .block;
+            .w-h(201px,
+            167px);
+        }
+    }
+    .other {
+        .relative;
+        z-index: 20;
+        color: gray;
+        line-height: 18px;
+        span {
+            .over-hidden;
+            .ellipsis;
+            .nowrap;
+            .inline-block;
+            .mar-r(6px);
+        }
+        .lesson-count {
+            max-width: 40px;
+        }
+        .learn-count {
+            max-width: 90px;
+        }
+    }
+    .collect {
+        .floatL(right);
+    }
+    .greenbtn {
+        .inline-block;
+        color: @white;
+        .radius(3px);
+        font-size: @font;
+        background: @green;
+        .transitionZ;
+        .actions {
+            background: @green2;
+            color: @white;
+        }
+        &:hover {
+            .actions;
+        }
+        &:active {
+            .actions;
+        }
+        &:focus {
+            .actions;
+        }
+    }
+    &:hover {
+        border-color: @green;
+        .describe {
+            .visibility(visible);
+            opacity: 1;
+        }
+    }
+    .describe {
+        .absolute;
+        .t-l;
+        .sq(100%);
+        z-index: 10;
+        background: @whitea;
+        opacity: 0;
+        .text-cen;
+        .visibility;
+        .transition(.3s);
+        .picture {
+            .over-hidden;
+            .absolute;
+            .t-l(20px,
+            50%);
+            .sq;
+            .mar-l(-25px);
+            .radius(50%);
+            img {
+                .sq(100%);
+            }
+        }
+        .name {
+            .absolute;
+            .t-l(74px);
+            width: 100%;
+        }
+        .text {
+            .over-hidden;
+            .absolute;
+            .t-l(100px);
+            .w-h(100%,
+            40px);
+            .p-0-auto(0,
+            16px);
+            .text-cen(left);
+            line-height: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .btn {
+            .absolute;
+            .t-l(164px,
+            50%);
+            .w-h(100px,
+            28px);
+            .mar-l(-50px);
+            font-size: 14px;
+            line-height: 26px;
+            .radius(2px);
+        }
+    }
+    a {
+        color: @grey*2;
+    }
+    .btn {
+        height: 26px;
+        .p-0-auto(0,
+        15px);
+        font-size: @font;
+        .radius(3px);
+        .transition-2s;
+        background: @rgbea;
+        border-color: @rgbea;
+        color: @grey*2;
+        .inline-block;
+        line-height: 24px;
+        .text-cen;
+        .nowrap;
+        text-decoration: none;
+        .pointer;
+        vertical-align: middle;
+    }
+    .btn-def {
+        background: @green;
+        border-color: @green;
+        color: @white;
+    }
+}
+
+.collect {
+    .over-hidden;
+    .w-h(56px,
+    20px);
+}

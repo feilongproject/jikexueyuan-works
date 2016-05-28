@@ -1,0 +1,121 @@
+.index-public-title {
+    .mar-b(16px);
+    strong {
+        font-size: @font*1.5;
+        color: @grey;
+        .floatL;
+        font-weight: @fw400+100;
+        a {
+            color: @grey;
+        }
+    }
+    .way {
+        font-size: @font;
+        line-height: @font+1;
+        color: @white;
+        background: @grey*3;
+        .text-cen;
+        .radius(50%);
+        .block;
+        .sq(13px);
+        .floatL;
+        .mar-d3(5px,
+        8px,
+        0);
+        .pointer;
+    }
+    .way-infor {
+        font-size: @font;
+        color: @grey*2;
+        .p-0-auto(2px,
+        4px);
+        .border;
+        .relative;
+        .inline-block;
+        .box-shadow(@grey*4,
+        1px,
+        1px,
+        3px);
+        opacity: 0;
+        .mar-l(-5px);
+        i {
+            background: url(@way-infor) center center no-repeat;
+            .w-h(5px,
+            10px);
+            ;
+            .block;
+            .absolute;
+            .t-l(5px,
+            -5px);
+            z-index: 10;
+        }
+    }
+    .more-lesson {
+        font-size: @font;
+        color: @blue;
+        .floatL(right);
+        .mar-t(4px);
+    }
+}
+
+.learn-card {
+    a {
+        .w-h(20%,
+        300px);
+        .border;
+        .floatL;
+        .text-cen;
+        .block;
+        border-right: 0;
+        .over-hidden;
+        img {
+            .mar-b(24px);
+        }
+        h2 {
+            font-size: 15px;
+            color: @grey;
+            .mar-b(20px);
+            height: 18px;
+            .over-hidden;
+        }
+        p {
+            font-size: @font;
+            color: @grey*2;
+            line-height: 20px;
+            .w-h(199px,
+            20px);
+            .over-hidden;
+        }
+        .greenbtn2 {
+            .w-h(140px,
+            34px);
+            line-height: 34px;
+            .text-cen;
+            .mar-t(20px);
+            .pointer;
+            outline: 0;
+        }
+        #Waiting-btn {
+            .greenbtn2;
+            background: @rgbf5;
+            color: gray;
+            .border;
+        }
+        &:hover {
+            #Waiting-btn {
+                background: #ddd;
+                outline: 0;
+            }
+        }
+        &:last-child {
+            .borderR;
+        }
+        &:nth-child(n+6) {
+            border-top: 0;
+        }
+        &:nth-child(5n+0) {
+            .borderR;
+        }
+    }
+}
+

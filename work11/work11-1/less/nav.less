@@ -1,0 +1,125 @@
+.navpositon {
+    .w-h(100%,
+    @navHeight);
+}
+
+#navbox {
+    height: @navHeight;
+    .relative;
+    z-index: 1100;
+    background: @white;
+    background: @whitea;
+    .borderB(@rgbe8);
+    .box-shadow;
+    .nav {
+        .relative;
+        .m-0-auto;
+        height: @navHeight;
+        .navbox {
+            width: 740px;
+            .navpanel {
+                .none;
+                .absolute;
+                top: 42px;
+                .w-h(100%,
+                140px);
+                background: @whitea97;
+                .border(@rgbe8);
+                border-top: 0;
+                .pad-l(50px);
+                .box-shadow;
+                .panel-item {
+                    .relative;
+                    .w-h(120px,
+                    100%);
+                    .mar-l(-1px);
+                    .borderR(@rgbf7);
+                    .floatL;
+                    .pad-t-l-b(10px,
+                    15px,
+                    14px);
+                    &:hover {
+                        background-color: @rgbf7;
+                    }
+                    &:first-child {
+                        .borderL(@rgbf7);
+                    }
+                    .angle {
+                        background-image: url(@angle);
+                        .w-h(12px,
+                        7px);
+                        .absolute;
+                        .bg-size;
+                        .t-l(-7px,
+                        54px);
+                        .none;
+                    }
+                    .item-box li a {
+                        line-height: 29px;
+                        .block;
+                        .text-cen(left);
+                        .mar-r;
+                        font-size: @font;
+                        color: @grey*2;
+                        clear: both;
+                        &:hover {
+                            color: @green;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .navpanel,
+                .angle {
+                    .block;
+                }
+            }
+        }
+        a {
+            .inline-block;
+            width: 120px;
+            font-size: @font+2;
+            color: @grey;
+            line-height: @navHeight;
+            .pad;
+            .text-cen;
+            .floatL;
+            &:hover {
+                color: @green;
+            }
+            &:nth-child(1) {
+                .pad;
+                .mar-r(22px);
+                width: auto;
+            }
+        }
+        .user-need {
+            height: @navHeight+2;
+            .absolute;
+            z-index: 10;
+            .t-r;
+            line-height: @navHeight+2;
+            font-size: @font;
+            a {
+                width: auto!important;
+                font-size: @font;
+                .pad;
+                .mar-l(20px);
+                &:nth-child(1) {
+                    margin-right: 0!important;
+                }
+            }
+            span {
+                .inline-block;
+                img {
+                    .floatL;
+                    .mar-r(5px);
+                    .mar-t(13px);
+                }
+                &:nth-child(1) img {
+                    .mar-t(14px);
+                }
+            }
+        }
+    }
+}

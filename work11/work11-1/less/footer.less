@@ -1,0 +1,189 @@
+#footer {
+    min-width: 1000px;
+    .jkinfor-block {
+        background: @rgbfa;
+        .borderT;
+        .borderB;
+        .jkinfor {
+            width: 1000px;
+            .m-0-auto;
+            min-height: 200px;
+        }
+    }
+    .jkinfor {
+        dl {
+            width: 185px;
+            .pad-l(30px);
+            color: gray;
+            .m-0-auto(25px,
+            0);
+            .floatL;
+            .borderL;
+            min-height: 175px;
+            dt {
+                font-size: @font+2;
+                color: @grey*2;
+                font-weight: @fw400+100;
+            }
+        }
+        a {
+            color: gray;
+            .pad-l(5px);
+            &:hover {
+                color: @green;
+            }
+        }
+        dl {
+            dd {
+                font-size: @font;
+                .mar-t(10px);
+            }
+        }
+    }
+    .search-share {
+        width: 260px;
+        .floatL;
+        min-height: 226px;
+        .borderL;
+        .pad-d4(20px,
+        0,
+        0,
+        40px);
+        .jktxt {
+            font-size: 15px;
+            color: @green;
+            .block;
+            .mar-b(15px);
+            font-weight: @fw400+100;
+        }
+        .app-download {
+            a {
+                .pad-l;
+                &:hover {
+                    p,
+                    strong {
+                        color: @green;
+                    }
+                }
+            }
+            img {
+                .block;
+                .floatL;
+                .mar-r(15px);
+            }
+            p {
+                font-size: @font+2;
+                color: gray;
+                background: url(@app-download) 160px center no-repeat;
+                .bg-size(7px, 13px);
+            }
+            strong {
+                font-size: @font*1.5;
+                color: @grey*2;
+                .mar-b(8px);
+            }
+        }
+        .share {
+            .mar-t(15px);
+            a {
+                background: url(@share) -23px 0 no-repeat;
+                .sq(32px);
+                .inline-block;
+                .floatL;
+                .mar-r(10px);
+                .relative;
+                .icon(@x: -23px,
+                @y: 0) {
+                    .bg-pos(@x, @y);
+                }
+                &.sina-icon {
+                    .icon;
+                    &:hover {
+                        .icon(-23px,
+                        -40px);
+                    }
+                }
+                &.tieba-icon {
+                    .icon(-145px);
+                    &:hover {
+                        .icon(-145px,
+                        -40px);
+                    }
+                }
+                &.qq-icon {
+                    .icon(-23px,
+                    -82px);
+                    .weinxinpop {
+                        .absolute;
+                        .b-l(32px,
+                        -48px);
+                        z-index: 200;
+                        .none;
+                    }
+                    &:hover {
+                        .icon(-23px,
+                        -122px);
+                        .weinxinpop {
+                            .block;
+                        }
+                    }
+                }
+            }
+            &:after {
+                .after;
+            }
+        }
+    }
+    .kefu-online {
+        .mar-t(15px);
+        .pad-l(35px);
+        a {
+            .block;
+            .pad;
+            &:hover {
+                h5,
+                p {
+                    color: @green;
+                }
+            }
+        }
+        .kefu-icon {
+            .floatL;
+            .sq(40px);
+            .mar-l(-40px);
+            background: url(@kefu-icon) no-repeat -40px 0/80px 40px;
+            &.online {
+                .bg-pos;
+            }
+        }
+        h5 {
+            color: @grey*2;
+            font-size: @font+2;
+            .mar-b(2px);
+            line-height: 22px;
+            .pad-l(5px);
+        }
+        p {
+            color: gray;
+            font-size: @font;
+            .pad-l(5px);
+        }
+    }
+    .copyright {
+        font-size: @font;
+        color: @grey*3;
+        .m-0-auto;
+        width: 1000px;
+        .text-cen;
+        .pad(20px);
+        strong {
+            font-weight: @fw400;
+        }
+        a {
+            color: @grey*3;
+            &:hover {
+                color: @green;
+            }
+        }
+    }
+}

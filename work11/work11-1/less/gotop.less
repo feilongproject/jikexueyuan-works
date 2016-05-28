@@ -1,0 +1,197 @@
+.gotop {
+    .relative(fixed);
+    .b-l(50px,
+    50%);
+    .mar-l(510px);
+    width: 34px;
+    .text-cen;
+    z-index: 2000;
+    span {
+        .pointer;
+        &.top {
+            .block;
+            background: url(@gotop) 0 0 no-repeat;
+            .bg-size(34px, 103px);
+            .sq(34px);
+            &:hover {
+                background: url(@gotop2) 0 0 no-repeat;
+                .bg-pos;
+                .bg-size(34px, 103px);
+            }
+        }
+        .img {
+            .w-h(126px,
+            159px);
+            .absolute;
+            z-index: 2100;
+            .t-l(-126px,
+            -70px);
+            .none;
+        }
+        &.erwma {
+            .relative;
+            .block;
+            background: url(@gotop) 0 -34px no-repeat;
+            .bg-size(34px, 103px);
+            .w-h(34px,
+            35px);
+            img {
+                .img;
+            }
+        }
+        &.jk-app {
+            .relative;
+            .block;
+            background: #f7f7f7 url(@phone-1) center center no-repeat;
+            .bg-size(12px, 24px);
+            .w-h(34px,
+            35px);
+            .borderB(@rgbe0);
+            img {
+                .img;
+            }
+            &:hover {
+                background: #f7f7f7 url(@phone-2) center center no-repeat;
+                .bg-size(12px, 24px);
+                .appewm {
+                    .block;
+                }
+            }
+        }
+    }
+    a {
+        &.diaocha {
+            .block;
+            background: url(@gotop) 0 -68px no-repeat;
+            .bg-size(34px, 101px);
+            .sq(34px);
+            &:hover {
+                background: url(@gotop2) 0 -68px no-repeat;
+                .bg-size(34px, 101px);
+            }
+        }
+        &.qq-online {
+            .kefu {
+                .absolute;
+                .pad(5px);
+                background: @rgbf7;
+                color: @grey;
+                font-size: @font;
+                .text-cen;
+                width: 180px;
+                left: -190px;
+                .none;
+                i {
+                    .w-h(0,
+                    20px);
+                    .borderT(transparent,
+                    8px);
+                    .borderL(@rgbf7,
+                    10px);
+                    .borderB(transparent,
+                    8px);
+                    .absolute;
+                    .t-r(12px,
+                    -10px);
+                }
+            }
+            &:hover {
+                .kefu {
+                    .block;
+                }
+            }
+        }
+        &.qq-online1 {
+            .relative;
+            .block;
+            background: #f7f7f7 url(@kfu1) center center no-repeat;
+            .w-h(34px,
+            35px);
+            .borderT(@rgbe0);
+        }
+    }
+}
+
+.appewm {
+    background: url(@appewm) center center no-repeat;
+    background-size: 100%;
+    .w-h(126px,
+    159px);
+    .absolute;
+    z-index: 2100;
+    .t-l(-126px,
+    -70px);
+    .none;
+}
+
+.pewmclose {
+    .absolute;
+    .t-r(-5px,
+    -13px);
+    z-index: 2200;
+    .w-h(14px);
+    .block;
+    background: url(@close4) center center no-repeat;
+    .bg-size(10px, auto);
+}
+
+.pewm {
+    .relative(fixed);
+    .b-l(240px,
+    50%);
+    left: 50%;
+    .mar-l(510px);
+    height: 120px;
+    .text-cen;
+    z-index: 2000;
+}
+
+.pewm2 {
+    .pewm;
+    font-size: @font;
+    color: @rgb25;
+    bottom: 400px;
+    .pointer;
+    .w-h(105px,
+    200px);
+    .bg-size;
+    .close {
+        .pewmclose;
+    }
+    p {
+        .pad-t(20px);
+    }
+}
+
+.pewm3 {
+    .pewm;
+    font-size: @font;
+    color: @rgb25;
+    bottom: 250px;
+    .w-h(105px,
+    120px);
+    .text-cen;
+    z-index: 2000;
+    .close {
+        .pewmclose;
+    }
+    p {
+        .pad-t(20px);
+    }
+}
+
+.loading_icon {
+    .sq(40px);
+    background: url(@loading) no-repeat;
+    .bg-size;
+    .absolute;
+    z-index: 2000;
+    .t-l(50%,
+    50%);
+    .mar-t(-20px);
+    .mar-l(-20px);
+    .block;
+    font-size: 1.2rem;
+    line-height: 40px;
+    .text-cen;
+}

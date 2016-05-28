@@ -1,0 +1,187 @@
+.hot-lesson {
+    ul {
+        height: 41px;
+        background: url(@hot-lesson) 0 100% repeat-x;
+        li {
+            width: 16.6%;
+            .floatL;
+            .text-cen;
+            font-size: @font+2;
+            color: @grey*2;
+            .p-0-auto(10px,
+            0);
+            .pointer;
+            &.on {
+                .borderB(@green,
+                2px);
+                background: url(@hot-lesson_on) center bottom no-repeat;
+                .bg-size(10px, 4px);
+                color: @green;
+            }
+        }
+    }
+}
+
+#hot-lessonbox {
+    .lesson-list {
+        ul {
+            width: 1100px;
+            .mar-t;
+            li {
+                .mar-r(20px);
+                background: 0 0;
+                .mar-b(20px);
+                .w-h(235px,
+                220px);
+            }
+        }
+        .lessonimg-box {
+            .border;
+            border-bottom: 0;
+            width: 235px;
+        }
+        .lesson-infor {
+            .border;
+            border-top: 0;
+            background: @white!important;
+            height: 88px;
+        }
+    }
+}
+
+.lesson-list {
+    ul {
+        li {
+            .w-h(240px,
+            220px);
+            .floatL;
+            .mar-r(20px);
+            .mar-b(20px);
+        }
+    }
+    .lessonimg-box {
+        .w-h(240px,
+        130px);
+        .relative;
+        .border;
+        border-bottom: 0;
+        .lessonimg {
+            .w-h(100%,
+            130px);
+        }
+    }
+    .lessonplay {
+        background: @white;
+        background: @blacka40;
+        .sq(100%);
+        z-index: 100;
+        .absolute;
+        .t-l;
+        opacity: 0;
+        .playericon {
+            .absolute;
+            z-index: 120;
+            .sq;
+            .block;
+            .t-l(50%,
+            50%);
+            .mar-l(-25px);
+            .mar-t(-25px);
+            background: url(@lessonplay) 0 0 no-repeat;
+            .pointer;
+            .bg-size-sq;
+        }
+    }
+    .lesson-infor {
+        .pad(10px);
+        .relative;
+        z-index: 200;
+        height: 88px;
+        .over-hidden;
+        background: @white;
+        .border;
+        border-top: 0;
+        .lesson-info-h2 {
+            font-size: @font+2;
+            color: @grey;
+            line-height: 18px;
+            .mar-b(12px);
+            height: 36px;
+            .over-hidden;
+            a,
+            a:hover {
+                color: @grey;
+            }
+        }
+        h5 {
+            .lesson-info-h2;
+        }
+        p {
+            color: gray;
+            font-size: @font;
+            line-height: 18px;
+            height: 0;
+            .over-hidden;
+            opacity: 0;
+            .mar-b(10px);
+            .none;
+        }
+        .timeandicon {
+            font-size: @font;
+            color: gray;
+            .relative;
+            dl {
+                width: 120px;
+                .floatL;
+                .nowrap;
+                dd {
+                    font-size: @font;
+                }
+            }
+            .time-icon {
+                background: url(@time-icon) 0 0 no-repeat;
+                .sq(14px);
+                .block;
+                .floatL;
+                .mar-r(8px);
+                .bg-size-sq(14px);
+            }
+            .learn-number {
+                .floatL(right);
+                .none;
+            }
+        }
+        .zhongji {
+            .none;
+        }
+        .lessonicon-box {
+            .absolute;
+            right: 0;
+            .text-cen(right);
+            bottom: 4px;
+            a {
+                .inline-block;
+                .sq(16px);
+                .mar-l(3px);
+                img {
+                    .block;
+                    .sq(16px);
+                }
+            }
+        }
+    }
+}
+
+.lesson-infor {
+    .timeandicon {
+        .xinhao-icon3 {
+            background: url(@lesson-infor) 0 0 no-repeat;
+            .bg-size-sq(14px);
+            .sq(14px);
+            .block;
+            .floatL;
+            .mar-r(8px);
+        }
+    }
+}
+

@@ -1,0 +1,82 @@
+.mapbox {
+    .borderB;
+    .borderR;
+    .w-h(1000px,
+    481px);
+    .over-hidden;
+    .mapbox-1200 {
+        width: 1050px;
+    }
+}
+
+.card-transform {
+    .w-h(167px,
+    120px);
+    .border;
+    border-right: 0;
+    border-bottom: 0;
+    .floatL;
+    .text-cen;
+    .relative;
+    .over-hidden;
+    .back-and-front {
+        .borderB;
+        .w-h(167px,
+        120px);
+        .visibility;
+        .transition;
+        .absolute;
+        .t-l;
+    }
+    .front {
+        .back-and-front;
+        .p-0-auto(15px,
+        0);
+        z-index: 2;
+        .rotateY;
+        background-color: @white;
+        img {
+            .mar-b(5px);
+            .sq(40px);
+        }
+        h2 {
+            .mar-b(5px);
+            font-size: 15px;
+            color: @grey;
+        }
+        span {
+            font-size: 14px;
+            color: @green;
+        }
+    }
+    &:hover {
+        .front {
+            .rotateY(180deg);
+        }
+        .back {
+            .rotateY;
+        }
+    }
+    .back {
+        .back-and-front;
+        .pad-t(30px);
+        .rotateY(180deg);
+        background-color: @rgbf5;
+        strong {
+            .block;
+            font-size: 14px;
+            color: @grey;
+            .mar-b(10px);
+            font-weight: @fw400;
+        }
+        .greenbtn {
+            font-size: 16px;
+            color: @white;
+            .text-cen;
+            .radius;
+            .w-h(140px,
+            36px);
+            .pointer;
+        }
+    }
+}

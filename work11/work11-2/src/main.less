@@ -1,0 +1,165 @@
+@import 'lib.less';
+body {
+    font-family: 微软雅黑;
+    font-size: @font;
+    background-color: @black;
+}
+
+p {
+    margin: 0;
+}
+
+.bus-wrap {
+    width: @width;
+    .m-center(20px);
+    .relative;
+}
+
+.station-name {
+    .relative;
+    .borderLR(@green);
+    background-color: @white;
+    .chinese {
+        font-size: @font*5;
+        p {
+            .text;
+            font-weight: 800;
+        }
+    }
+    .pinyin {
+        width: 100%;
+        font-size: @font*2;
+        p {
+            .text;
+            font-weight: 600;
+        }
+    }
+    p {
+        color: @dark-green;
+    }
+}
+
+.green {
+    background-color: @green;
+}
+
+.stop-bus {
+	height: 172px;
+    .relative;
+    .top {
+        .borderLR;
+    }
+    .left {
+        background-color: @dark-green;
+        .borderL;
+        .company {
+            .sq;
+            .relative;
+            .t-l;
+            .inline-block;
+            p {
+                color: @light-green;
+                font-weight: 600;
+                font-size: @font*1.5;
+            }
+        }
+        .number {
+            .relative;
+            .inline-block;
+            .w-h(130px, 60px);
+            .t-l(-3px, 25px);
+            p {
+                font-size: @font*5;
+                color: @white;
+                font-weight: 800;
+            }
+        }
+        .next-station {
+            p {
+                color: @red;
+                font-size: @font*2;
+                font-weight: 600;
+                .text;
+            }
+        }
+        .price {
+            .relative;
+            margin-left: 15px;
+            .t-l(3px, 0);
+            p {
+                color: @light-green;
+                font-weight: 600;
+                .inline-block;
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .time {
+            .price;
+        }
+        .to-where {
+            margin-top: 5px;
+            transform-origin:0 0;
+            p {
+                color: @light-green;
+                font-weight: 600;
+                font-size: 15px;
+                .text;
+            }
+        }
+    }
+    .right {
+        background-color: @light-green;
+        .borderR;
+        color: @dark-green;
+        font-weight: 600;
+        .stations {
+            height: 140px;
+            overflow: hidden;
+            list-style: none;
+            margin-top: 10px;
+            .name {
+                .f_l;
+                .inline;
+                height: 140px;
+                .word-tb;
+                line-height: 20px;
+            }
+            .another-name {
+                .f_l;
+                .inline;
+                .word-tb;
+                min-height: 10px;
+            }
+        }
+    }
+}
+
+.s-top {
+    height: 12px;
+    .relative;
+}
+
+.left {
+    .relative;
+    .w-h(@width*0.2 - @border-width);
+    .f_l;
+}
+
+.right {
+    .relative;
+    .w-h(@width*0.8 - @border-width);
+    .f_r;
+}
+
+.cilcle {
+    .inline-block;
+    .sq(10px);
+    border-radius: 50%;
+    background-color: @light-green;
+}
+
+.red-color{
+	color: @red;
+}

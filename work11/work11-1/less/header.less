@@ -1,0 +1,142 @@
+#header {
+    min-height: 70px;
+    .m-0-auto;
+    .p-0-auto(10px, 0);
+    .wrap {
+        .relative;
+        z-index: 1200;
+        &:after {
+            .after;
+        }
+    }
+    .logo {
+        .floatL;
+        width: 113px;
+        .mar-t(5px);
+    }
+    .header-ad {
+        .w-h;
+        .over-hidden;
+        .mar-l(20px);
+        .floatL;
+    }
+    .loginbox {
+        .floatL(right);
+        .text-cen(right);
+        line-height: 50px;
+        font-size: @font;
+        color: @grey;
+        .inline-block;
+        .border-box;
+        .user-name {
+            .pointer;
+            .inline-block;
+        }
+        em {
+            .p-0-auto(0, 5px);
+        }
+        span {
+            .user-name;
+            a,
+            a:hover {
+                color: @grey;
+            }
+        }
+    }
+    .loginbox_event {
+        .loginbox;
+    }
+}
+
+.search-section {
+    .absolute;
+    .b-l(5px, 50%);
+    .mar-d4(0, 0, 0, -@sectionWidth*0.5);
+    .w-h(@sectionWidth, @font*3+2);
+    .border;
+    .border-box;
+    z-index: @sectionIndex;
+    div,
+    input {
+        .border-box;
+    }
+    .search-text {
+        .w-h(100%, @font*3);
+        .pad-d4(@font*0.75, 150px, @font*0.75, 15px);
+        border: 0;
+        line-height: @font*1.5;
+        color: @grey;
+        background: @white;
+        font-size: @font;
+        .text-cen(left);
+    }
+    .search-btn2 {
+        .border(@green);
+        background: @green url(@search-btn2) center center no-repeat!important;
+    }
+    .search-btn {
+        .absolute;
+        .t-r(-1px,-1px);
+        .w-h(40px,
+        @font*3+2);
+        .border(@rgbdf);
+        color: @rgb6d;
+        background: url(@search-btn) center center no-repeat;
+        .pointer;
+        &:hover {
+            .search-btn2;
+        }
+    }
+    .hot-words {
+        .absolute;
+        .t-r(@font*0.75,
+        @font*4);
+        font-size: @font;
+        a {
+            .inline-block;
+            .p-0-auto(1px,3px);
+            .mar-l(5px);
+            color: gray;
+            background: @rgbf3;
+            &:hover {
+                color: @grey;
+                background: @rgbdf;
+            }
+        }
+    }
+    .keyword-list {
+        .absolute;
+        .t-l(37px,-1px);
+        z-index: 2100;
+        width: @sectionWidth;
+        .p-0-auto(15px,0);
+        .border;
+        border-top: 0;
+        background: @white;
+        .none;
+    }
+}
+.my-massage2 {
+    background: url(@my-massage2) left center no-repeat;
+    .bg-size(15px,13px);
+    .border-box(content-box);
+    .inline-block;
+    width: 50px;
+    .text-cen(left);
+    .pad-l(@font);
+    .relative;
+}
+
+#loading {
+    .w-h(100%,
+    2px);
+    .over-hidden;
+    background: @rgbf3;
+    .loading-length {
+        .w-h(0,
+        2px);
+        .over-hidden;
+        background: @green;
+        background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca));
+    }
+}

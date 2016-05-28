@@ -1,0 +1,103 @@
+.wikibox {
+    .one-wiki {
+        .w-h(333.3px,
+        370px);
+        .floatL;
+        .pad(15px);
+        .border;
+        h2 {
+            font-size: @font+2;
+            font-weight: @fw400+100;
+        }
+        dl {
+            dd {
+                .text-cen;
+                width: 142px;
+                .floatL;
+                &:nth-child(1) {
+                    .mar-r(15px);
+                }
+                .imgbox {
+                    .relative;
+                    .w-h(142px,
+                    200px);
+                    background: @grey*3;
+                    .radius(5px);
+                    .look {
+                        .absolute;
+                        .w-h(40px,
+                        20px);
+                        z-index: 10;
+                        .t-r(-13px,
+                        -10px);
+                        background: url(@wiki-img) center center no-repeat;
+                        .bg-size;
+                        .none;
+                    }
+                    &:hover {
+                        .look {
+                            .block;
+                        }
+                        img.fengmian {
+                            .animation;
+                            transform-origin: 0 0 0;
+                        }
+                    }
+                    img.fengmian {
+                        .w-h(142px,
+                        200px);
+                        .radius(5px);
+                        transform-origin: 0 0 0;
+                        .animation(ffk-animate2);
+                    }
+                }
+                h3 {
+                    font-size: 13px;
+                    color: @grey;
+                    height: 13px;
+                    .block;
+                    .nowrap;
+                    .over-hidden;
+                    .ellipsis;
+                    line-height: 13px;
+                    .m-0-auto(10px);
+                }
+                span {
+                    font-size: @font;
+                    color: @grey*3;
+                    .block;
+                }
+            }
+        }
+        ul {
+            .mar-t(10px);
+            li {
+                font-size: @font;
+                color: @grey*3;
+                line-height: @font;
+                .mar-b(8px);
+                .block;
+                a {
+                    color: @grey*3;
+                    &:hover {
+                        color: @green;
+                    }
+                }
+                p {
+                    width: 200px;
+                    .block;
+                    .nowrap;
+                    .over-hidden;
+                    .ellipsis;
+                    .floatL;
+                }
+                span {
+                    .text-cen(right);
+                    .block;
+                    .floatL(right);
+                    width: 90px;
+                }
+            }
+        }
+    }
+}

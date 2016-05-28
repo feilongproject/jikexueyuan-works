@@ -1,0 +1,538 @@
+.lesson-classfiy-nav {
+    .relative;
+    .w-h(@lessonCWidth,
+    @lessonCHeight);
+    .floatL;
+    .borderT(@green,
+    2px);
+    border-right: 0;
+    background: url(@lesson-classfiy1) 100% 0 repeat-y;
+    ul {
+        .absolute;
+        z-index: 800;
+        .w-h(@lessonCWidth,
+        @lessonCHeight - 2);
+        background: #fff;
+        .border;
+        border-top: 0;
+    }
+    li>div {
+        .w-h(@lessonCWidth - 2,
+        (@lessonCHeight - 3)/10);
+        line-height: (@lessonCHeight - 3)/10;
+        .p-0-auto(0,
+        15px);
+        font-size: @font+1;
+        color: @grey;
+        .borderB(@rgbf5);
+        background: @white url(@lesson-classfiy2) 186px center no-repeat;
+        .bg-size(6px, 10px);
+        .pointer;
+        font-weight: @fw400;
+        &:hover {
+            color: @grey;
+            .borderT;
+            .borderB;
+            .w-h(213px,
+            38px);
+            .mar-l(-2px);
+            .mar-t(-1px);
+            .borderL(@green,
+            2px);
+            .pad-l(18px);
+            .borderR(@white,
+            3px);
+            background: @white;
+            .box-shadow(@blacka,
+            1px,
+            1px,
+            2px);
+            a {
+                color: @green;
+            }
+            .lesson-list-show {
+                .block;
+            }
+        }
+    }
+    li>div>a {
+        color: @grey;
+    }
+    li {
+        .lesson-list-show {
+            .box-shadow(@blacka,
+            2px,
+            2px,
+            4px);
+            .over-hidden;
+            min-height: 373px;
+            min-width: 401px;
+            background: @white;
+            .border;
+            .absolute;
+            .t-l(-2px,
+            209px);
+            z-index: 100;
+            border-left: 0;
+            .none;
+            .pad-b(30px);
+            dl {
+                .m-0-auto(0,
+                10px);
+                .over-hidden;
+            }
+            dt {
+                .block;
+                .borderB(@rgbf5);
+                height: 37px;
+                line-height: 45px;
+            }
+            dt>a {
+                color: @grey;
+                font-size: @font+1;
+                font-weight: @fw400;
+            }
+            a:hover {
+                color: @green;
+            }
+            dd {
+                list-style: none;
+                .mar-l(-8px);
+                .p-0-auto(3px,
+                0);
+                a {
+                    height: @font+2;
+                    line-height: @font+2;
+                    .mar-b(10px);
+                    .mar-t(4px);
+                    .p-0-auto(0,
+                    7px);
+                    color: @grey*2;
+                    .inline-block;
+                    font-size: @font;
+                    .borderL(@rgbe0);
+                    .floatL;
+                    .nowrap;
+                    font-weight: @fw400;
+                }
+            }
+        }
+        .lesson-list-show>div {
+            .floatL;
+            width: 399px;
+        }
+    }
+}
+
+.lesson-center-focus {
+    width: @lessonWidth;
+    .floatL;
+    .mar-l(10px);
+    .over-hidden;
+}
+
+.focuswork-wrap {
+    .relative;
+    margin-top: 13px!important;
+    .border(@rgbe2);
+    width: 100%;
+    height: 100px!important;
+    overflow: hidden!important;
+    .arrow {
+        .none;
+        .absolute;
+        top: 30px;
+        z-index: 200;
+        .w-h(24px,
+        40px);
+    }
+    .arrow-d(@num1: 0,
+    @num2: 0) {
+        background: url(@arrow) @num1 @num2 no-repeat;
+        .bg-size(48px, 80px);
+    }
+    .arrow-left {
+        left: 0;
+        .arrow-d;
+    }
+    .arrow-right {
+        right: 0;
+        .arrow-d(-24px,
+        0);
+    }
+    .arrow-left2 {
+        left: 0;
+        .arrow-d(0,
+        -40px);
+    }
+    .arrow-right2 {
+        right: 0;
+        .arrow-d(-24px,
+        -40px);
+    }
+    .lesson-list {
+        li {
+            .floatL;
+            width: 186px!important;
+            height: 100px!important;
+        }
+        .swiper-slide {
+            .relative;
+            .t-l;
+        }
+        .lession-item {
+            .block;
+            .floatL;
+            .relative;
+            .sq(100%);
+            .borderR(@rgbf5);
+            .status {
+                .none;
+                .absolute;
+                .w-h(54px,
+                20px);
+                font-size: @font;
+                line-height: 20px;
+                .text-cen;
+                color: @white;
+                .t-r(-2px,
+                5px);
+            }
+            .status.red {
+                background: @red;
+            }
+            .lession-icon {
+                .sq(40px);
+                .block;
+                .m-0-auto(8px,
+                auto);
+            }
+            .lession-title {
+                font-size: @font;
+                color: @grey;
+                .text-cen;
+                .mar-b(4px);
+            }
+            .intro {
+                font-size: font;
+                .text-cen;
+                color: @grey*2;
+            }
+        }
+    }
+}
+
+.lesson-right-show {
+    .w-h(210px,
+    373px);
+    .floatL;
+    .border;
+    .over-hidden;
+    .mar-l(10px);
+    .news {
+        .p-0-auto(0,
+        13px);
+        height: 125px;
+        .borderB;
+        h3 {
+            .mar-t(10px);
+            color: @grey;
+            font-size: @font+2;
+        }
+        .list {
+            .mar-t(5px);
+            .item {
+                a {
+                    .block;
+                    color: @grey*2;
+                    font-size: @font;
+                    .over-hidden;
+                    .ellipsis;
+                    .nowrap;
+                    line-height: 1.8;
+                    &:hover {
+                        color: @green;
+                    }
+                }
+            }
+        }
+    }
+    .userinfo {
+        height: 86px;
+        .borderB;
+        .over-hidden;
+        .head-box {
+            .floatL;
+            width: 64px;
+            .mar-t(10px);
+            img {
+                .block;
+                .m-0-auto;
+                .sq(40px);
+            }
+        }
+        .name-wrap {
+            .floatL;
+            width: 140px;
+            .hello-word {
+                .mar-t(10px);
+                .word {
+                    font-size: @font;
+                    color: @grey*2;
+                }
+                .sentence {
+                    font-size: @font;
+                    color: @grey;
+                    .mar-t(2px);
+                }
+                .operate {
+                    .mar-t(7px);
+                    .btn {
+                        .block;
+                        .floatL;
+                        .w-h(48px,
+                        20px);
+                        line-height: 20px;
+                        font-size: @font;
+                        color: @white;
+                        .text-cen;
+                    }
+                    .login-btn {
+                        .btn;
+                        .mar-r(10px);
+                        background: @red1;
+                    }
+                    .register-btn {
+                        .btn;
+                        background: @green;
+                    }
+                }
+            }
+        }
+    }
+    .recommend {
+        .start-list {
+            li {
+                .floatL;
+                .block;
+                color: @black;
+                .w-h(52px,
+                76px);
+                font-size: @font;
+                line-height: 23px;
+                .text-cen;
+                .borderB(@rgbf5);
+                .borderR(@rgbf5);
+                &:hover {
+                    color: @green;
+                }
+                a {
+                    .block;
+                    color: @black;
+                    .w-h(52px,
+                    76px);
+                    .over-hidden;
+                }
+                .icon(@num: -3px) {
+                    background-image: url(@icon);
+                    .block;
+                    .sq(25px);
+                    .mar-d3(13px,
+                    auto,
+                    0);
+                    .bg-size(71px, 232px);
+                    .bg-pos(-5px, @num);
+                }
+                .icon.question {
+                    .icon;
+                }
+                .icon.wiki {
+                    .icon(-31px);
+                }
+                .icon.lession {
+                    .icon(-59px);
+                }
+                .icon.group {
+                    .icon(-87px);
+                }
+                .icon.download {
+                    .icon(-117px);
+                }
+                .icon.known {
+                    .icon(-144px);
+                }
+                .icon.occupation {
+                    .icon(-173px);
+                }
+                .icon.vip {
+                    .icon(-202px);
+                }
+                .angle-bottom {
+                    .block;
+                    .sq(0);
+                    .border(transparent,
+                    6px);
+                    .borderT(@rgbe4,
+                    6px);
+                    .border-box(content-box);
+                    .m-0-auto;
+                }
+            }
+        }
+        .move-list {
+            .none;
+            .type-list {
+                li {
+                    .floatL;
+                    .w-h(52px,
+                    24px);
+                    line-height: 24px;
+                    .text-cen;
+                    font-size: @font;
+                    background: @rgbfc;
+                    .borderB(@rgbf5);
+                    .borderR(@rgbf5);
+                    .pointer;
+                    &.active {
+                        border-bottom: 0;
+                        background: @white;
+                        color: @green;
+                    }
+                }
+            }
+            .content {
+                .relative;
+                height: 125px;
+                .question {
+                    .pad(10px);
+                    li {
+                        a {
+                            .block;
+                            .over-hidden;
+                            .ellipsis;
+                            .nowrap;
+                            color: @grey*2;
+                            line-height: 20px;
+                            &:hover {
+                                color: @green;
+                            }
+                            img {
+                                .inline;
+                                .sq(16px);
+                            }
+                            .title {
+                                .mar-l(4px);
+                                font-size: @font;
+                            }
+                        }
+                    }
+                }
+                .wiki {
+                    .m-0-auto(15px,
+                    10px);
+                    li {
+                        .floatL;
+                        width: 55px;
+                        font-size: @font;
+                        .mar-r(7px);
+                        a:hover {
+                            color: @green;
+                        }
+                        img {
+                            .w-h(55px,
+                            73px);
+                            .block;
+                        }
+                        .title {
+                            .block;
+                            .mar-t(8px);
+                            .text-cen;
+                            .over-hidden;
+                            .ellipsis;
+                            .nowrap;
+                        }
+                    }
+                }
+                .lession {
+                    li {
+                        .floatL;
+                        a {
+                            .w-h(104px,
+                            64px);
+                            .borderB(@rgbf5);
+                            .borderR(@rgbf5);
+                            .block;
+                            color: @grey*2;
+                            .over-hidden;
+                            &:hover {
+                                color: @green;
+                            }
+                        }
+                        img {
+                            .sq(30px);
+                            .block;
+                            .m-0-auto(7px);
+                        }
+                        .title {
+                            .block;
+                            .text-cen;
+                            font-size: @font;
+                            .over-hidden;
+                            .ellipsis;
+                            .nowrap;
+                        }
+                        &:nth-child(2n) a {
+                            border-right: 0;
+                        }
+                    }
+                }
+                .group {
+                    .m-0-auto(10px,
+                    0);
+                    font-size: @font;
+                    li {
+                        height: 54px;
+                        .borderB(@rgbf5);
+                        .over-hidden;
+                        .pad(10px);
+                        .picture {
+                            .floatL;
+                            .mar-r(10px);
+                            .sq(32px);
+                        }
+                        .info {
+                            .floatL;
+                            width: 95px;
+                            .title {
+                                color: @grey;
+                                .nowrap;
+                                .ellipsis;
+                                .over-hidden;
+                            }
+                            .count {
+                                color: @grey*2;
+                            }
+                        }
+                        .join {
+                            .floatL;
+                            .w-h(50px,
+                            20px);
+                            line-height: 20px;
+                            .radius(3px);
+                            color: @white;
+                            background: @orange;
+                            .text-cen;
+                            .mar-t(5px);
+                        }
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+                .tab-content {
+                    .none;
+                }
+            }
+        }
+    }
+}

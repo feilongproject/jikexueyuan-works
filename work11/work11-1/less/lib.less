@@ -1,0 +1,556 @@
+@white: #ffffff;
+@grey: #333;
+@red: #B03C3A;
+@red1: #FB5D20;
+@red2: #b23b37;
+@black: #000;
+@green: #35b558;
+@green2: #66d178;
+@orange: #ff5c00;
+@blue: #2d85ca;
+
+@fw400: 400;
+
+@rgb01: #010101;
+@rgb25: @rgb01*37;
+@rgb6d: @rgb01*109;
+@rgb7e: @rgb01*126;
+@rgb8c: @rgb01*140;
+@rgbdf: @rgb01*223;
+@rgbe0: @rgb01*224;
+@rgbe2: @rgb01*226;
+@rgbe4: @rgb01*228;
+@rgbe8: @rgb01*232;
+@rgbea: @rgb01*236;
+@rgbf3: @rgb01*243;
+@rgbf5: @rgb01*245;
+@rgbf7: @rgb01*247;
+@rgbfa: @rgb01*250;
+@rgbfc: @rgb01*252;
+
+@whitea: rgba(255,255,255,0.9);
+@blacka: rgba(0,0,0,0.1);
+@whitea97: rgba(255,255,255,0.97);
+@blacka20: rgba(0,0,0,0.2);
+@blacka40: rgba(0,0,0,0.4);
+
+@font: 12px;
+
+
+@sectionWidth: 380px;
+@sectionIndex: 2000;
+@navHeight: 42px;
+
+@lessonWidth: 560px;
+@bannerHeight: 260px;
+@lessonCWidth: 210px;
+@lessonCHeight: 373px;
+
+@liveHeight:200px;
+
+@search-btn:        '../img/topsearch-icon_e1f5df2.png';
+@search-btn2:       '../img/topsearch-icon2_8c8d8b0.png';
+@my-massage2:       'http://s1.jikexueyuan.com/common/images/massage-icon2_d1369b2.gif';
+@angle:             '../img/nav-angle_f7c86b6.png';
+@lesson-classfiy1:  '../img/nav_r_border_04083a2.jpg';
+@lesson-classfiy2:  'http://s1.jikexueyuan.com/index/images/more-icon_d39346f.png';
+@arrow:             'http://s1.jikexueyuan.com/index/images/focus-nav_4593a01.png';
+@arrow-left:        'http://s1.jikexueyuan.com/index/images/banner-left_fe0df34.png';
+@arrow-right:       'http://s1.jikexueyuan.com/index/images/banner-right_a0bdd7d.png';
+@icon:              'http://s1.jikexueyuan.com/index/images/recommend_4a9a464.png';
+@swiper-pagination: 'http://s1.jikexueyuan.com/index/images/swiper1_6a811bf.jpg';
+@swiper-active:     'http://s1.jikexueyuan.com/index/images/swiper2_78fab30.jpg';
+@icon-teacher:      '../img/teachericon_7f306d1.png';
+@icon-clock:        '../img/clok_a413ecf.png';
+@part2-close:       'http://s1.jikexueyuan.com/index/images/close3_215a363.png';
+@hot-lesson:        'http://s1.jikexueyuan.com/index/images/hotnav_bc_f22b37e.jpg';
+@hot-lesson_on:     'http://s1.jikexueyuan.com/index/images/index-sj_cc73747.png';
+@lessonplay:        'http://s1.jikexueyuan.com/common/images/player_icon_5c67475.png';
+@time-icon:         'http://s1.jikexueyuan.com/common/images/clok_a413ecf.png';
+@lesson-infor:      'http://s1.jikexueyuan.com/common/images/three-ji_b588ab1.png';
+@way-infor:         'http://s1.jikexueyuan.com/index/images/title-sj_adebc06.jpg';
+@wiki-img:          'http://s1.jikexueyuan.com/index/images/look_d293d44.png';
+@app-download:      'http://s1.jikexueyuan.com/common/images/more-icon_d39346f.png';
+@share:             'http://s1.jikexueyuan.com/common/images/icon_7f8b929.png';
+@kefu-icon:         'http://s1.jikexueyuan.com/common/images/kefu_8edc734.png';
+@gotop:             'http://s1.jikexueyuan.com/common/images/gotop_d19051b.jpg';
+@gotop2:            'http://s1.jikexueyuan.com/common/images/gotop2_3c1a479.jpg';
+@phone-1:           'http://s1.jikexueyuan.com/common/images/phone-1_b9a83cb.png';
+@phone-2:           'http://s1.jikexueyuan.com/common/images/phone-2_3e87776.png';
+@kfu1:              'http://s1.jikexueyuan.com/common/images/kfu1_3dd1509.png';
+@appewm:            'http://s1.jikexueyuan.com/common/images/appewm_72cb766.png';
+@close4:            'http://s1.jikexueyuan.com/common/images/close4_e9b7521.png';
+@loading:           'http://s1.jikexueyuan.com/common/images/loading_25f7326.png';
+@m-bg-1:            'http://static.soperson.com/131221/../default/images/monitor/m_bg_1.gif?131127';
+
+
+.box-shadow(@color: @blacka,@num1: 0,@num2: 1px,@num3: 5px) {
+    -webkit-box-shadow: @color @num1 @num2 @num3;
+    -moz-box-shadow: @color @num1 @num2 @num3;
+    box-shadow: @color @num1 @num2 @num3;
+}
+.border-box(@border-box: border-box) {
+    -moz-box-sizing: @border-box;
+    -ms-box-sizing: @border-box;
+    box-sizing: @border-box;
+}
+
+.m-0-auto(@d1: 0, @d2: auto) {
+    margin: @d1 @d2;
+}
+
+.p-0-auto(@d1: 0, @d2: auto) {
+    padding: @d1 @d2;
+}
+
+.relative(@position: relative) {
+    position: @position;
+}
+
+.absolute(@position: absolute) {
+    position: @position;
+}
+
+.floatL(@left: left) {
+    float: @left;
+}
+
+.block() {
+    display: block;
+}
+
+.none() {
+    display: none;
+}
+
+.inline-block() {
+    display: inline-block;
+}
+
+.inline() {
+    display: inline;
+}
+
+.pointer() {
+    cursor: pointer;
+}
+
+.w1000(@width: 1000px) {
+    width: @width;
+    .m-0-auto;
+}
+
+.after(@display: table) {
+    display: @display;
+    clear: both;
+    content: "";
+}
+
+.w-h(@width: 160px, @height: 50px) {
+    width: @width;
+    height: @height;
+}
+
+.sq(@len:50px){
+	.w-h(@len,@len);
+}
+
+.t-l(@top: 0, @left: 0) {
+    top: @top;
+    left: @left;
+}
+
+.t-r(@top: 0, @right: 0) {
+    top: @top;
+    right: @right;
+}
+
+.b-l(@bottom: 0, @left: 0) {
+    left: @left;
+    bottom: @bottom;
+}
+
+.borderL(@color: @rgbe4, @width: 1px) {
+    border-left: @width solid @color;
+}
+
+.borderR(@color: @rgbe4, @width: 1px) {
+    border-right: @width solid @color;
+}
+
+.borderT(@color: @rgbe4, @width: 1px) {
+    border-top: @width solid @color;
+}
+
+.borderB(@color: @rgbe4, @width: 1px) {
+    border-bottom: @width solid @color;
+}
+
+.border(@color: @rgbe4, @width: 1px) {
+    border: @width solid @color;
+}
+
+.radius(@r:inherit){
+	border-radius: @r;
+    -webkit-border-radius: @r;
+    -moz-border-radius: @r;
+}
+
+.mar-l(@left: 0) {
+    margin-left: @left;
+}
+
+.mar-r(@right: 0) {
+    margin-right: @right;
+}
+
+.mar-t(@top: 0) {
+    margin-top: @top;
+}
+
+.mar-b(@bottom) {
+    margin-bottom: @bottom;
+}
+
+.mar(@num: 0) {
+    margin: @num;
+}
+
+.mar-d3(@num1: 0, @num2: 0, @num3: 0) {
+    margin: @num1 @num2 @num3;
+}
+
+.mar-d4(@num1: 0, @num2: 0, @num3: 0, @num4: 0) {
+    margin: @num1 @num2 @num3 @num4;
+}
+
+.pad(@num: 0) {
+    padding: @num;
+}
+
+.pad-l(@left: 0) {
+    padding-left: @left;
+}
+
+.pad-r(@right: 0) {
+    padding-right: @right;
+}
+
+.pad-t(@top: 0) {
+    padding-top: @top;
+}
+
+.pad-b(@bottom) {
+    padding-bottom: @bottom;
+}
+
+.pad-d3(@num1: 0, @num2: 0, @num3: 0) {
+    padding: @num1 @num2 @num3;
+}
+
+.pad-d4(@num1: 0, @num2: 0, @num3: 0, @num4: 0) {
+    padding: @num1 @num2 @num3 @num4;
+}
+
+.pad-t-l-b(@top: 0, @left: 0, @bottom: 0) {
+    .pad-l(@left);
+    .pad-t(@top);
+    .pad-b(@bottom);
+}
+
+.mar-t-i(@top: 20px) {
+    margin-top: @top!important;
+}
+
+.bg-size(@x:100%,@y:100%){
+	background-size: @x @y;
+}
+
+.bg-size-sq(@len:50px){
+	.bg-size(@len,@len);
+}
+
+.bg-pos(@x:0,@y:0){
+	background-position: @x @y;
+}
+
+.over-hidden(){
+	overflow:hidden;
+}
+.visibility(@hidden: hidden) {
+    -webkit-backface-visibility: @hidden;
+    -moz-backface-visibility: @hidden;
+    -ms-backface-visibility: @hidden;
+    -o-backface-visibility: @hidden;
+    backface-visibility: @hidden;
+}
+.transition(@time:.6s){
+	-webkit-transition: @time;
+	-moz-transition: @time;
+	-ms-transition: @time;
+	transition: @time;
+}
+.rotateY(@y:0deg){
+	-webkit-transform: rotateY(@y);
+    -moz-transform: rotateY(@y);
+    -ms-transform: rotateY(@y);
+    transform: rotateY(@y);
+}
+.banner-d() {
+    .absolute;
+    top: 50%;
+    .mar-t(-25px);
+    z-index: 800;
+    .none;
+    .pointer;
+}
+
+.arrow-d() {
+    .w-h(40px,
+    50px);
+    .block;
+    overflow: hidden;
+    .pointer;
+}
+
+.transitionZ(@z:0,@time:.8s){
+	-webkit-transition-duration: @time;
+    transition-duration: @time;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(@z);
+    transform: translateZ(@z);
+}
+.transition-s-t(@s:border-color,@t:.3s){
+	-webkit-transition: @s @t;
+    -moz-transition: @s @t;
+    transition: @s @t;
+}
+.transition-2s(@s1:border-color,@s2:background-color,@t:.8s){
+	-webkit-transition: @s1 @t @s2 @t;
+    -moz-transition: @s1 @t @s2 @t;
+    transition: @s1 @t @s2 @t;
+}
+
+.animation(@name:ffk-animate,@t:1s,@m1:ease,@m2:forwards){
+	-moz-animation: @name @t @m1 @m2;
+    -webkit-animation: @name @t @m1 @m2;
+    -o-animation: @name @t @m1 @m2;
+    -ms-animation: @name @t @m1 @m2;
+    animation: @name @t @m1 @m2;
+}
+
+.ellipsis(){
+	text-overflow: ellipsis;
+}
+
+.nowrap(){
+	white-space: nowrap;
+}
+
+.text-cen(@location:center){
+	text-align: @location;
+}
+body {
+    background: @white;
+}
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    .border-box;
+    font-family: "Verdana", "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", "Helvetica", "arial", "sans-serif";
+}
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: @fw400;
+}
+
+img,
+input,
+label,
+select {
+    vertical-align: middle;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    .border-box;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+iframe {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input {
+    outline: 0;
+    border: 0;
+}
+
+button {
+    border: 0 none;
+}
+
+/*animation*/
+
+@-webkit-keyframes ffk-animate {
+    0% {
+        -webkit-transform: rotateY(0deg)
+    }
+    100% {
+        -webkit-transform: rotateY(-20deg)
+    }
+}
+
+@-moz-keyframes ffk-animate {
+    0% {
+        -moz-transform: rotateY(0deg)
+    }
+    100% {
+        -moz-transform: rotateY(-20deg)
+    }
+}
+
+@-ms-keyframes ffk-animate {
+    0% {
+        -ms-transform: rotateY(0deg)
+    }
+    100% {
+        -ms-transform: rotateY(-20deg)
+    }
+}
+
+@keyframes ffk-animate {
+    0% {
+        transform: rotateY(0deg)
+    }
+    100% {
+        transform: rotateY(-20deg)
+    }
+}
+
+@-webkit-keyframes ffk-animate2 {
+    0% {
+        -webkit-transform: rotateY(-20deg)
+    }
+    100% {
+        -webkit-transform: rotateY(0deg)
+    }
+}
+
+@-moz-keyframes ffk-animate2 {
+    0% {
+        -moz-transform: rotateY(-20deg)
+    }
+    100% {
+        -moz-transform: rotateY(0deg)
+    }
+}
+
+@-ms-keyframes ffk-animate2 {
+    0% {
+        -ms-transform: rotateY(-20deg)
+    }
+    100% {
+        -ms-transform: rotateY(0deg)
+    }
+}
+
+@keyframes ffk-animate2 {
+    0% {
+        transform: rotateY(-20deg)
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-ms-keyframes rotate {
+    100% {
+        -ms-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
