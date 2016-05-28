@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #CDC7CE;
+}
+
+a {
+    text-decoration: none;
+    color: #E94A4A;
+}
+
+hr {
+    border: #000 solid 2px;
+    margin-top: 5px;
+}
+
+div[class*=part] {
+    width: 80%;
+    margin-left: 50px;
+    color: #1A0F0F;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+    border-bottom: #000 solid 2px;
+    margin-bottom: 20px;
+}
+
+div h1 {
+    font-size: 30px;
+    color: #D92735;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+div p {
+    margin-top: 10px;
+}
+
+div ol>li {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+div ul>li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.codeText {
+    font-family: 'Courier New', Monospace;
+    font-size: 12px;
+    width: 99%;
+    overflow: auto;
+    margin: 0 0 1em 0;
+    background: #E6E6E6;
+}
+
+.codeText ol,
+.codeText ol li,
+.codeText ol li span {
+    margin: 0 0;
+    padding: 0;
+    border: none;
+}
+
+.codeText ol {
+    list-style: decimal;
+    background: #F7F7F7;
+    margin: 0px 0px 1px 3em !important;
+    padding: 5px 0;
+    color: #5C5C5C;
+}
+
+.codeText ol li.alt {
+    color: inherit;
+    list-style-type: decimal;
+}
+
+.codeText ol li {
+    list-style-type: decimal;
+    background: url(http://images.51cto.com/images/art1105/images/0.gif) repeat-y scroll -498px -70px transparent;
+    list-style-position: outside !important;
+    color: #5C5C5C;
+    padding: 0 3px 0 10px !important;
+    margin: 0 !important;
+    line-height: 18px
+}
+
+.codeText ol li span {
+    color: black;
+    background-color: inherit;
+}
+
+.codeText .keyword {
+    color: #069;
+    font-weight: bold;
+    background-color: inherit
+}
