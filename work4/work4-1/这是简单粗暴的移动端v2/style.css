@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+p,
+li,
+a {
+    color: #ffffff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;
+    min-width: 360px;
+    max-width: 660px;
+}
+
+
+/*part1*/
+
+.menu-intro {
+    height: 0;
+    padding-bottom: 172.222%;
+    background: url(image/01.png) center 0;
+    background-size: 100%;
+    position: relative;
+}
+
+
+/*part2*/
+
+.hiw {
+    height: 0;
+    padding-bottom: 344.444%;
+    background: url(image/02.png) center 0 #fff;
+    background-size: 100%;
+    position: relative;
+}
+
+
+/*part3*/
+
+.wib {
+    height: 0;
+    padding-bottom: 300.833%;
+    background-color: #f3f3f3;
+    background: url(image/03.png) center 0 #fff;
+    background-size: 100%;
+    position: relative;
+}
+
+
+/*part4*/
+
+.newsletter {
+    height: 0;
+    padding-bottom: 92.222%;
+    background-color: #f3f3f3;
+    background: url(image/04.png) center 0 #fff;
+    background-size: 100%;
+    position: relative;
+}
+
+
+/*虽然说全是图片，表单还是要写的*/
+
+.newsletter .field {
+    width: 90.278%;
+    height: 0;
+    padding-bottom: 41.975%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.newsletter .field .mailinput {
+    width: 100%;
+    margin-top: 50%;
+    height: 0%;
+    padding: 2% 0;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px #f3f3f3;
+    font-family: "Myriad Pro";
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+.newsletter .field .send {
+    width: 39.167%;
+    height: 0;
+    padding-bottom: 15%;
+    display: block;
+    margin: 12% auto 0 auto;
+    border: 0;
+    background: transparent;
+}
+
+
+}
+
+/*part5*/
+.download {
+    height: 0;
+    padding-bottom: 145.278%;
+    background-color: #f3f3f3;
+    background: url(image/05.png) center 0 #fff;
+    background-size: 100%;
+    position: relative;
+}
+
+/*part6*/
+.footer {
+    height: 0;
+    padding-bottom: 27.778%;
+    background-color: #f3f3f3;
+    background: url(image/06.png) center 0 #fff;
+    background-size: 100%;
+    position: relative;
+}

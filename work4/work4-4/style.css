@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #CDC7CE;
+}
+
+a {
+    text-decoration: none;
+    color: #E94A4A;
+}
+
+hr {
+    border: #000 solid 2px;
+    margin-top: 5px;
+}
+
+div[class*=part] {
+    width: 80%;
+    margin-left: 50px;
+    color: #1A0F0F;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+    border-bottom: #000 solid 2px;
+    margin-bottom: 20px;
+}
+
+div h1 {
+    font-size: 30px;
+    color: #D92735;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+div p {
+    margin-top: 10px;
+}
+
+div ol>li {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+div ul>li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.codeText {
+    border-right: #a5a5f8 1px solid;
+    padding-right: 0px;
+    border-top: #a5a5f8 1px solid;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    margin: 8px 0px 1.1em;
+    font: 12px "courier new", monospace;
+    overflow: hidden;
+    border-left: #a5a5f8 1px solid;
+    width: 82%;
+    word-break: break-all;
+    padding-top: 0px;
+    border-bottom: #a5a5f8 1px solid;
+}
+
+.codeHead {
+    padding-right: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    background: #f4f5ff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: #f2fbf6 1px solid;
+    height: 15px;
+}
+.copyCodeText {
+    font-weight: normal;
+    float: right;
+    cursor: pointer;
+    line-height: 180%;
+    font-size: 12px;
+}
+.codeText .codeHead span{
+	line-height: 180%;
+    font-size: 12px;
+    background: #f4f5ff;
+}
+.codeText ol {
+    padding-right: 0px;
+    padding-left: 0px;
+   
+    padding-bottom: 2px;
+    margin: 0px 1px 0px 45px;
+    border-left: #f00 1px solid;
+    color: #5c5c5c;
+    padding-top: 2px;
+}
+.codeText ol li {
+    padding-left: 5px;
+    font-size: 16px;
+    color: #aa0000;
+}
+.codeText ol li span {
+    color: #000;
+    font-size: 16px;
+}
+.dp-css .colors {
+    color: darkred;
+    font-size: 16px;
+}
+.dp-css .keyword {
+    color: blue;
+    font-size: 16px;
+}
+.dp-css .string {
+    color: red;
+    font-size: 16px;
+}

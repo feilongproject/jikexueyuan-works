@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+	font-size: 16px;
+}
+p,
+li,
+a {
+    color: #ffffff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;
+    min-width: 360px;
+    max-width: 360px;
+}
+
+
+/*第一页，part1*/
+
+.menu-intro {
+    height: 620px;
+    background: url(image/backgroundimage-mobile.png) center 0;
+    background-size: 360px 1474px;
+    position: relative;
+}
+/*顶部*/
+.menu-intro .top {
+    height: 67px;
+    position: relative;
+}
+/*logo*/
+.menu-intro .top .logo {
+    width: 154px;
+    height: 37px;
+    background: url(image/web1icon.png) 0 0 no-repeat;
+    background-size: 154px 166px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+}
+/*菜单*/
+.menu-intro .top .menu {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.menu-intro .top .menu i {
+    display: block;
+    width: 29px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+    position: relative;
+    margin: 7px 0;
+}
+/*文字内容*/
+.menu-intro .content {
+    width: 235px;
+    height: 93px;
+    text-align: center;
+    position: relative;
+    margin: 47px auto 0 auto;
+    font-family: "Myriad Pro";
+    color: #fff;
+}
+
+.menu-intro .content .sline1 {
+    font-size: 19px;
+}
+
+.menu-intro .content .sline2 {
+    font-size: 15px;
+    margin: 15px;
+    line-height: 20px;
+}
+/*按钮*/
+.menu-intro .button {
+    width: 168px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 25px auto 0 auto;
+    position: relative;
+}
+
+.menu-intro .button .icon {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    background: url(image/web1icon.png) -142px -33px no-repeat;
+    background-size: 154px 166px;
+}
+
+.menu-intro .button .a-box {
+    text-align: center;
+    position: relative;
+    top: 15px;
+    left: 9px;
+}
+
+.menu-intro .button .a-box a {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    color: #982fec;
+}
+/*手机图片*/
+.menu-intro .mobile {
+    width: 246px;
+    height: 298px;
+    margin: 45px auto 0 auto;
+    background: url(image/mobile.png) 0 0 no-repeat;
+    background-size: 1100px 500px;
+    position: relative;
+}
+
+
+/*第二页*/
+
+.hiw {
+    height: 1240px;
+    background-color: #fff;
+    position: relative;
+}
+/*文字内容*/
+.hiw .content {
+    width: 325px;
+    height: 245px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 65px;
+}
+
+.hiw .content h1 {
+    font-family: "Myriad Pro";
+    font-size: 21px;
+    color: #2e2e2e;
+}
+
+.hiw .content p {
+    font-family: "Myriad Pro";
+    font-size: 12px;
+    color: #949494;
+    margin-top: 20px;
+    line-height: 25px;
+}
+/*选择1*/
+.hiw .syp {
+    width: 238px;
+    height: 228px;
+    margin: 61px auto 0 auto;
+    position: relative;
+}
+
+.hiw .syp .icon {
+    width: 46px;
+    height: 61px;
+    margin: 0 auto;
+    background: url(image/web1icon.png) 0px -48px no-repeat;
+    background-size: 200px 210px;
+    position: relative;
+}
+
+.hiw .syp .content {
+    width: 238px;
+    height: 124px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 43px;
+}
+
+.hiw .syp .content .p1 {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #3f4244;
+    margin: 0;
+    line-height: 20px;
+}
+
+.hiw .syp .content .symbole {
+    position: relative;
+    margin-top: 18px;
+}
+
+.hiw .syp .content .symbole .symbole1 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .syp .content .symbole .symbole2 {
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: #8557ea;
+    border: solid 1px #fff;
+    display: inline-block;
+}
+
+.hiw .syp .content .symbole .symbole3 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .syp .content .p2 {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color: #7f7f7f;
+    margin-top: 18px;
+}
+/*选择2*/
+.hiw .tp {
+    width: 225px;
+    height: 251px;
+    margin: 98px auto 0 auto;
+    position: relative;
+}
+
+.hiw .tp .icon {
+    width: 61px;
+    height: 67px;
+    margin: 0 auto;
+    background: url(image/web1icon.png) -54px -43px no-repeat;
+    background-size: 200px 210px;
+    position: relative;
+}
+
+.hiw .tp .content {
+    width: 224px;
+    height: 151px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.hiw .tp .content .p1 {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #3f4244;
+    margin: 0;
+    line-height: 26px;
+}
+
+.hiw .tp .content .symbole {
+    position: relative;
+    margin-top: 18px;
+}
+
+.hiw .tp .content .symbole .symbole1 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .tp .content .symbole .symbole2 {
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: #8557ea;
+    border: solid 1px #fff;
+    display: inline-block;
+}
+
+.hiw .tp .content .symbole .symbole3 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .tp .content .p2 {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color: #7f7f7f;
+    margin-top: 18px;
+    line-height: 30px;
+}
+/*选择3*/
+.hiw .gn {
+    width: 225px;
+    height: 215px;
+    margin: 90px auto 0 auto;
+    position: relative;
+}
+
+.hiw .gn .icon {
+    width: 63px;
+    height: 66px;
+    margin: 0 auto;
+    background: url(image/web1icon.png) -116px -43px no-repeat;
+    background-size: 200px 210px;
+    position: relative;
+}
+
+.hiw .gn .content {
+    width: 225px;
+    height: 116px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 38px;
+}
+
+.hiw .gn .content .p1 {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #3f4244;
+    margin: 0;
+    line-height: 20px;
+}
+
+.hiw .gn .content .symbole {
+    position: relative;
+    margin-top: 18px;
+}
+
+.hiw .gn .content .symbole .symbole1 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .gn .content .symbole .symbole2 {
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: #8557ea;
+    border: solid 1px #fff;
+    display: inline-block;
+}
+
+.hiw .gn .content .symbole .symbole3 {
+    width: 43px;
+    height: 2px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.hiw .gn .content .p2 {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color: #7f7f7f;
+    margin-top: 18px;
+    line-height: 20px;
+}
+
+
+/*第三页，part3*/
+
+.wib {
+    height: 1082px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+/*文字内容*/
+.wib .content {
+    width: 316px;
+    height: 503px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 73px;
+}
+
+.wib .content h1 {
+    font-family: "Myriad Pro";
+    font-size: 33px;
+    color: #3f4244;
+}
+
+.wib .content p {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    color: #7f7f7f;
+    margin-top: 34px;
+    line-height: 24px;
+}
+
+.wib .content ul {
+    margin-top: 85px;
+}
+
+.wib .content ul li {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    color: #7f7f7f;
+    text-align: left;
+    height: 45px;
+    line-height: 18px;
+}
+
+.wib .content ul li:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4a5158;
+    position: relative;
+    top: -2px;
+    margin-right: 16px;
+}
+/*手机图片*/
+.wib .mobile-bg {
+    width: 198px;
+    height: 434px;
+    margin: 51px auto 0 auto;
+    background: url(image/mobile.png) -433px 0 no-repeat;
+    background-size: 1100px 500px;
+    position: relative;
+    top: 73px;
+}
+
+
+/*第四页，part4*/
+
+.newsletter {
+    height: 332px;
+    position: relative;
+    background: url(image/backgroundimage-mobile.png) center -619px;
+    background-size: 360px 1474px;
+    position: relative;
+}
+/*文字内容*/
+.newsletter .content {
+    width: 324px;
+    height: 69px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.newsletter .content h1 {
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    color: #f3f3f3;
+}
+/*emai表单*/
+.newsletter .field {
+    width: 325px;
+    height: 151px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.newsletter .field .mailinput {
+    width: 100%;
+    height: 37px;
+    display: block;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px #f3f3f3;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    color: #f3f3f3;
+}
+
+.newsletter .field .send {
+    width: 123px;
+    height: 49px;
+    display: block;
+    margin: 32px auto 0 auto;
+    border-radius: 7px;
+    background-color: #f3f3f3;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    line-height: 49px;
+    padding: 0 50px 0 36px;
+    color: #3e3e3e;
+    background: url(image/web1icon.png) -110px -179px no-repeat #f3f3f3;
+    background-size: 200px 210px;
+}
+
+
+/*第五页，part5*/
+
+.download {
+    height: 523px;
+    position: relative;
+    background: url(image/backgroundimage-mobile.png) center -952px;
+    background-size: 360px 1474px;
+    position: relative;
+}
+/*文字内容*/
+.download .content {
+    width: 313px;
+    height: 141px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.download .content h1 {
+    font-family: "Myriad Pro";
+    font-size: 31px;
+    color: #fff;
+}
+
+.download .content p {
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    color: #f2f2f2;
+    margin-top: 32px;
+}
+/*系统选择*/
+.download .icon {
+    width: 324px;
+    height: 187px;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 80px;
+}
+
+.download .icon>div {
+    width: 123px;
+    height: 73px;
+    position: absolute;
+}
+/*apple*/
+.download .icon .as {
+    top: 3px;
+    left: 0;
+}
+
+.download .icon .as .apple {
+    width: 33px;
+    height: 38px;
+    margin: 0 auto;
+    position: relative;
+    background: url(image/web1icon.png) -42px -172px no-repeat;
+    background-size: 200px 210px;
+}
+/*google*/
+.download .icon .gs {
+    top: 0;
+    right: 0;
+}
+
+.download .icon .gs .google {
+    width: 40px;
+    height: 41px;
+    margin: 0 auto;
+    position: relative;
+    background: url(image/web1icon.png) -117px -111px no-repeat;
+    background-size: 200px 210px;
+}
+/*windows*/
+.download .icon .ws {
+    top: 114px;
+    left: 95px;
+}
+
+.download .icon .ws .windows {
+    width: 36px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    background: url(image/web1icon.png) 0px -170px no-repeat;
+    background-size: 200px 210px;
+}
+/*共同属性*/
+.download .icon .buttom {
+    width: 124px;
+    height: 23px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #982fec;
+}
+
+.download .icon .buttom a {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 23px;
+}
+
+
+/*第六页脚部，footer*/
+
+.footer {
+    height: 100px;
+    background-color: #0f0e14;
+    position: relative;
+}
+
+.footer .footer-box {
+    width: 265px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    position: relative;
+    top: 33px;
+    line-height: 23px;
+}
+
+.footer .footer-box p {
+    color: #e0e0e0;
+}
+
+.footer .footer-box p .span1 {
+    color: #982fec;
+}
+.footer .footer-box p .span2 {
+    color: #747474;
+}
