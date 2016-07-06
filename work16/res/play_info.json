@@ -1,0 +1,261 @@
+{
+  "ID": "49223b8b-a007-43ba-bf04-b916a1faab1b",
+  "Version": "3.10.0.0",
+  "Name": "info",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 35,
+        "Children": [
+          {
+            "IsCustomSize": true,
+            "FontSize": 48,
+            "LabelText": "0",
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 359.9998,
+              "Y": 1216.0
+            },
+            "Scale": {
+              "ScaleX": 1.3154,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.95
+            },
+            "PreSize": {
+              "X": 0.2083,
+              "Y": 0.0375
+            },
+            "LeftMargin": 284.9998,
+            "RightMargin": 285.0002,
+            "TopMargin": 40.0,
+            "BottomMargin": 1192.0,
+            "Tag": 37,
+            "ActionTag": -694983103,
+            "Size": {
+              "X": 150.0,
+              "Y": 48.0
+            },
+            "Name": "Score",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 48,
+            "LabelText": "Life:3",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 612.0,
+              "Y": 1216.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.85,
+              "Y": 0.95
+            },
+            "PreSize": {
+              "X": 0.2,
+              "Y": 0.0375
+            },
+            "LeftMargin": 540.0,
+            "RightMargin": 36.0,
+            "TopMargin": 40.0,
+            "BottomMargin": 1192.0,
+            "Tag": 38,
+            "ActionTag": 1034437988,
+            "Size": {
+              "X": 144.0,
+              "Y": 48.0
+            },
+            "Name": "life",
+            "ctype": "TextObjectData"
+          },
+          {
+            "ProgressInfo": 0,
+            "ImageFileData": {
+              "Type": "Default",
+              "Path": "Default/LoadingBarFile.png",
+              "Plist": ""
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 144.0,
+              "Y": 1216.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0
+            },
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.2,
+              "Y": 0.95
+            },
+            "PreSize": {
+              "X": 0.2778,
+              "Y": 0.0094
+            },
+            "LeftMargin": 44.0,
+            "RightMargin": 476.0,
+            "TopMargin": 58.0,
+            "BottomMargin": 1210.0,
+            "Tag": 39,
+            "ActionTag": 2007211087,
+            "Size": {
+              "X": 200.0,
+              "Y": 12.0
+            },
+            "Name": "cp",
+            "ctype": "LoadingBarObjectData"
+          },
+          {
+            "FontSize": 18,
+            "ButtonText": "退出",
+            "TextColor": {
+              "G": 0,
+              "B": 0
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 687.4504,
+              "Y": 1163.4031
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9548,
+              "Y": 0.9089
+            },
+            "PreSize": {
+              "X": 0.0639,
+              "Y": 0.0281
+            },
+            "LeftMargin": 664.4504,
+            "RightMargin": 9.5496,
+            "TopMargin": 98.5969,
+            "BottomMargin": 1145.4031,
+            "Tag": 40,
+            "ActionTag": -2071797151,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Quit_Game",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 720.0,
+          "Y": 1280.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
+        "Default/Button_Press.png",
+        "Default/LoadingBarFile.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
